@@ -1,0 +1,2117 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02BC901BA5AD89EE7E2B8E83E0F864C3 /* WhiteSDK+Room.h in Headers */ = {isa = PBXBuildFile; fileRef = AEBCE0D8DDB86F40B60905588F9443AC /* WhiteSDK+Room.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04CDF8C6743CE03E9E51B7CEE705DFB9 /* WhitePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFAA4059D8A546FCEEB1CB9FF1EF17B /* WhitePlayer.m */; };
+		0638CA9997E12DA641E5A90D8D2E4979 /* UIColor+NSNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FC1FF43C8179C2DCAEDD5604C21789 /* UIColor+NSNumber.swift */; };
+		079A8895FF01B4FF1B1DB7AE05E36ACC /* WhiteCombinePlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A533F32CCD675D41DE356029642E787 /* WhiteCombinePlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08B06649693679BF62D49C6B3A0F6820 /* ControlBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B54EEAA9AB575D9669E144A5C6DD38 /* ControlBar.swift */; };
+		0AA7072C949332D449921853D5F32468 /* runtime.36e3f0da.js in Resources */ = {isa = PBXBuildFile; fileRef = 7AAE3619C5D94BC14A75A723B2694F11 /* runtime.36e3f0da.js */; };
+		0CABAAB76E58E51656EA6057719CBD28 /* WhiteRectangleConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 19E7BB9F1C61F5EDBAC16268FE0E6F58 /* WhiteRectangleConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F65CB919057E616525E4C8A51C956D5 /* Fastboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32527D7BD0EC23C05DD4A151A391D7B3 /* Fastboard.swift */; };
+		114CA104309B0CBB9F9E8712C3924893 /* JSBUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A0D479FCF66A80EA39AF841A2B9ECD4 /* JSBUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11BAE23B757D8777E4BBE0FA030A68A7 /* InternalApis.m in Sources */ = {isa = PBXBuildFile; fileRef = 8184D1F1AAEF218BC926207AE3098DF9 /* InternalApis.m */; };
+		11E6F36D99866CEEAC7022B142B43A9A /* WhiteImageInformation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A8F6DD664C3A06A69D85C4B49A03CB8 /* WhiteImageInformation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12D4C4302CAD5715521ABA6A11908F48 /* WhiteCameraState.m in Sources */ = {isa = PBXBuildFile; fileRef = D450D5173ECB1CE3AC150E77C81D2BAB /* WhiteCameraState.m */; };
+		13C65DECB4B3A522889B012419600B27 /* FastboardDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AAF896E446D0AD6E1F8FFC893E7AD7 /* FastboardDelegate.swift */; };
+		17BB0434CB47D01BBF7B20711EA36294 /* WhiteSliderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 67E066779799030B7E8339A00626A821 /* WhiteSliderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		188D41EE640AADC127E31FC45FA14AC3 /* WhiteWebViewInjection.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE5B386356F0324AAE17ED2869E47D7 /* WhiteWebViewInjection.m */; };
+		189AB87E46F8994DA166D1CDA6898A6B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03504BC490B33B26405B98309F94474E /* UIKit.framework */; };
+		1CAEC1D799224064EBDEB6BC48C7C3B5 /* FastPanelControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4E7002B3582A5C43B7F2B518F5990D /* FastPanelControl.swift */; };
+		1D56493C62E1D823348D114C75B2889F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03504BC490B33B26405B98309F94474E /* UIKit.framework */; };
+		1D7974D8C481F8B235338C756A18B1C3 /* WhiteScene.h in Headers */ = {isa = PBXBuildFile; fileRef = C2F6C8993555AF3FABABA13360A6AA58 /* WhiteScene.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E04E0A33CC20EEE7FC84DA0C6B264CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F63FD32AB75EDD088C61982E5C9F289 /* Foundation.framework */; };
+		20614857E84A19162DA4750CF135890B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F63FD32AB75EDD088C61982E5C9F289 /* Foundation.framework */; };
+		22F8208AFB8D407375547DB9AFD581AE /* WhitePptPage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0970D9657B85F0178A4556804DF07031 /* WhitePptPage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		247E2ECE044B2A5DBA1D667D50FC1665 /* YYModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9569852661A3D1301351B9940E4A890D /* YYModel-dummy.m */; };
+		259865E8B8A9228EAA91C0A67D1BB6F9 /* WhiteCommonCallbacks.m in Sources */ = {isa = PBXBuildFile; fileRef = D932ADDF48D8CD7C0A57216E5F389B07 /* WhiteCommonCallbacks.m */; };
+		25D87AC63D56206A8E8ECD8C67EB94B0 /* main.f1d5e41e.js in Resources */ = {isa = PBXBuildFile; fileRef = 6301F5E332B4A1F7302BCF9DAAB78FE3 /* main.f1d5e41e.js */; };
+		2996423D8797770BBA689D7E47C42588 /* YYClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = E8C409B357CA39DDB13994A3650F3619 /* YYClassInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A9BEA11C47B51DDEEE7B03F270CFBB3 /* FastError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5B74CF34100576687C56CACB1746A6 /* FastError.swift */; };
+		2BE6C351B9870457AFAB1EE8D4C0A354 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFB293023AFCC13A1891A645DB499DE /* Region.swift */; };
+		2C233150975AE23645F61E1494ADB91D /* WhiteRoomState.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C1A92A8D79704CB4591DF91AD80DBC9 /* WhiteRoomState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C2704E4198B9BAF9263FB7C0B9EAC57 /* ApplianceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F17837BBDA266F87EF1EBF9D3DDDE6 /* ApplianceButton.swift */; };
+		2D121E2B21B6D447D6818DA10C1E3ECE /* WhiteMemberState.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AA374C3DC32A509662950D37302081 /* WhiteMemberState.m */; };
+		2D87FE1D65B1C7517398CB8BE503FD08 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCAE0F768653B6CA6191DF6EFBFB9EE /* ThemeManager.swift */; };
+		312594EB9A89DE5CD650327841628BF5 /* WhiteConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 324DED6ABD48A30BF4BF9789E0A14E3C /* WhiteConverter.m */; };
+		3325F9B9AE8F8D747378C4590E3E2852 /* WhitePlayerEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 51050B42D5D6BA9EEE2FAFEF69311394 /* WhitePlayerEvent.m */; };
+		3497CA16EFFC41DBE427FE5745CC057B /* WhitePlayerConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = D40972ED325448C67B4A9C9A03BB469F /* WhitePlayerConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34A5875510B3894E02FF9BE33D71B271 /* WhiteDisplayer+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DA94038B98592F79EE9064C3BC77219 /* WhiteDisplayer+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		350B5AD1CF7327982637937FA9678E9C /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 783BB5E1DD6CAFDD96466237DBA3B5E9 /* NSObject+YYModel.m */; };
+		35E3801A4A40BED7AB778890B1940619 /* WhiteRoom+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 21EDCB988FC865D9238B41248D929BB5 /* WhiteRoom+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		38979C35B20810FDA242497FFFC1DAFC /* UIColor+Convince.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2837FA435B7FDDF9817D5BAAEC09289A /* UIColor+Convince.swift */; };
+		398B9B9CE465EA92321144EA47A39ED1 /* DWKWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = D85DFEFAF5CABF2F7BA7ACD818605621 /* DWKWebView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E90142D3DF63EEDA8202517734C0D08 /* WhiteRoomState.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE187B93098193E79F856527170EF83 /* WhiteRoomState.m */; };
+		405E4CF2588C2EC4A8680B142E7E273E /* WhiteRoomCallbacks.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B11B41FC0A274E444B2172261A7F85A /* WhiteRoomCallbacks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41620B51C882FF51B02CE708FEA04E55 /* CompactFastboardOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640FE42BD3D6026F63E07065010B953C /* CompactFastboardOverlay.swift */; };
+		4244D5F634897CF19FC465E1499E9BC7 /* Pods-ExampleFastboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BB9AE98598D0DF7654547A7E3D8BB8 /* Pods-ExampleFastboard-dummy.m */; };
+		42764E969538DDF06A250F76F3A83791 /* Whiteboard.h in Headers */ = {isa = PBXBuildFile; fileRef = C37ADA6C22B94D9CE5D771DC6884006C /* Whiteboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44FB8D2853BC8EE1DCEF4AC24447099C /* vendor.5611aab0.css in Resources */ = {isa = PBXBuildFile; fileRef = 8972E11001B297AEC3940F8D4C1DB383 /* vendor.5611aab0.css */; };
+		468E1F8140391CC3F44F832567846C29 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 972A1D2E8C2B89BB8266B22579015DAF /* Icons.xcassets */; };
+		489289EC97451D30ABD56622D678E559 /* WhiteImageInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A53F616413A6413602123C287A3D24F /* WhiteImageInformation.m */; };
+		48A36852D3B1A325362BD680605B37E6 /* WhitePlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 877742624EA730EF01344F77899BBCA9 /* WhitePlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48DE16F978BF06B168879E3A955A5380 /* YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D0DCA552B4BD3039BC415A0AB6F6326 /* YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		490B019453DD359EB995C890432C060F /* WhiteSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA031671FC29AC64C72E1440A500AE5 /* WhiteSDK.m */; };
+		4C108B0B8F435E318A20C67972DE9533 /* WhiteRoomCallbacks+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CDF5F4CDA1C8BA8726AFD47F3D1CCFB /* WhiteRoomCallbacks+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4C7AF9EC34864605747A9D2976D3ACAE /* dsbridge.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB949EFBF77B3321E6F53CE3C39229B /* dsbridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DD04814DB860D289AD9576048676524 /* WhitePlayerTimeInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C184F76833680DC2A6B15EB9D6D16EA /* WhitePlayerTimeInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E936F830F41374516B4C81469F72332 /* WhiteAudioMixerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = CD48CCDBCFCAE585E5551EC7CF93A5BF /* WhiteAudioMixerBridge.m */; };
+		53937C68AD3A56A0D92EFF7C44E8B718 /* FastOperation+NeedColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D696F5F573FA9D8AC7A97B6CA05ECF /* FastOperation+NeedColor.swift */; };
+		57744903742E90C4EBABD6BCC31C3DED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F63FD32AB75EDD088C61982E5C9F289 /* Foundation.framework */; };
+		57B1CAB0699145E4DE59D44B7D89A315 /* WhitePlayerConsts.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CC9F1648CB76297821DDEAB5A04155E /* WhitePlayerConsts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57ECCAF264E259C6D793E7DFE1349E50 /* WhiteEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = D578F34073AEDEF0BB269E65178E4984 /* WhiteEvent.m */; };
+		58D04AA81E036A714A8A359739D2C6BA /* dsBridge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2AFC206A5893249C1CFBFC3F3F1BAF /* dsBridge-dummy.m */; };
+		5980386E46BB399D169D9CA1298E25AC /* FastConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A84912E2684AA4858A64159124D6E /* FastConfiguration.swift */; };
+		5A445EA84CAD55B3013185E1E9312833 /* WhiteBroadcastState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F41F6ADDC4F6C12F5C364CA86E40142 /* WhiteBroadcastState.m */; };
+		5B1DE153731C53A7099B9D82E3766BB3 /* FastRoomPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CBD3B3AD9E0373C84B47F2F7575DE5 /* FastRoomPhase.swift */; };
+		5C1FED637AC8A6FA9BBF08A6D93129DF /* WhiteBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 401C360D39B6A9069FD8843CBE059C30 /* WhiteBoardView.m */; };
+		5D1C85330F3F85AF51E763655A5329EE /* WhiteAppParam.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B4229F49535A6B6C77D204D5933F94F /* WhiteAppParam.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D497AF4DA563E53500F29DA320A212A /* WhiteDisplayerState.m in Sources */ = {isa = PBXBuildFile; fileRef = B39B03FEA6533E8EBDFB1CB1759409D2 /* WhiteDisplayerState.m */; };
+		5D78199ECA55E207D65FA5721DB54117 /* WhitePanEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = E90B3C9C72093A51093735B8AE51C147 /* WhitePanEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E08538AC4D0B10B3322DE8E76F98C65 /* Fastboard-Icons in Resources */ = {isa = PBXBuildFile; fileRef = 92842DC65A4EE2E5A0E11A62B49986FA /* Fastboard-Icons */; };
+		5EB72584BB4A16B0915A0E31528223CD /* DSCallInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = FF661E7D2039D5A48C8AF8A50B8AED1E /* DSCallInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FE3B907DF99E0A7056F60FF89389AE6 /* WhiteDisplayer.h in Headers */ = {isa = PBXBuildFile; fileRef = B20A212A8F680E519D07DC92C26A4BC3 /* WhiteDisplayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60F7204B076E6A555B6E18B59DBC38FC /* DefaultOperationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7066D7D37E347932E07719244E00465B /* DefaultOperationType.swift */; };
+		61BC2BD5669B239F2F37840112DB275C /* WhiteSdkConfiguration+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = C6AD00A6B22F51CDD6A50B89E454085C /* WhiteSdkConfiguration+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		63CC71C09CEDF529D6B52838A69238CE /* WhiteAudioMixerBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 44B63830650257C16E9D86C6ACA5B839 /* WhiteAudioMixerBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		651A7F09CFE5DBEF32295FFAE5C104B4 /* FastboardOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249C5145B0DF15C21965D8D6F63D823C /* FastboardOverlay.swift */; };
+		66450DE67DDD27D52CF3856E785EA0CF /* WhiteCameraBound.m in Sources */ = {isa = PBXBuildFile; fileRef = D74BA959B2621A7DBCDD8DF41F21AFB5 /* WhiteCameraBound.m */; };
+		66B97DD82BF63F1A1C291F5CB6D85254 /* WhiteAppParam.m in Sources */ = {isa = PBXBuildFile; fileRef = E42A6CF86A07F64A322522BFC26DC95D /* WhiteAppParam.m */; };
+		692F20C1933F9DFFCF9C527ED2535114 /* WhiteSceneState.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BC2E257E673103EED87637A6DDEBD05 /* WhiteSceneState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AAFADC11C23807E95A5705D70AB9255 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2338967813D2B6011268E4CADBECB798 /* CoreFoundation.framework */; };
+		6B008CBF80BDDB896CB4B3AC4D53DFC6 /* JSBUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AAAB11C699A6CBBDE8E8EA8E3B6D4A /* JSBUtil.m */; };
+		6BAEDAD7908CABFD458282A6022AB5DC /* WhiteFontFace.h in Headers */ = {isa = PBXBuildFile; fileRef = B4EB586AEB5E896B541666EA0D5B1EFD /* WhiteFontFace.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D3CC7ECF844691F0AC52C124FEE137E /* WhiteVideoView.h in Headers */ = {isa = PBXBuildFile; fileRef = 012DF6090A5C10C3FB163C751E999C03 /* WhiteVideoView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78163129CBF9510CB920867EB19D3F93 /* UIImage+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFFE0D518180998E79F6473779D424E /* UIImage+Bundle.swift */; };
+		789DF34B1C20ADDD2BFA3CBE23C28119 /* DSCallInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B864B6F2D632F7DF01AF379F4D10317 /* DSCallInfo.m */; };
+		78DE1230708955B913B4DDB9F463A4C2 /* FastboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2056F35FB9F00C3FB284179E6F73422 /* FastboardManager.swift */; };
+		7921CAB05739A202813E9FA5CBF1A489 /* 3861930 in Resources */ = {isa = PBXBuildFile; fileRef = FD9AF7951D3DED0DEAB95FCDD22520AC /* 3861930 */; };
+		7A41263FCBB480F60A6A34FC6ED56DBB /* WhiteObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C70DC4939B92EDB419C1917EF3BF74C /* WhiteObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7AC41A9FB52E15A9AF2F6AE250CD0CDF /* web-sdk.b9b319d7.js in Resources */ = {isa = PBXBuildFile; fileRef = 20B9A94FDB2626EEA54158FD7E6C3704 /* web-sdk.b9b319d7.js */; };
+		7B0D65136C99B2E44A5D779C2EE7D4BF /* WhiteSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 93B223BA84B4BF2A9018D494C8729058 /* WhiteSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E39AE7BF1F28AF0526AA35806A09683 /* WhiteSDK+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = DBEFD2A46E424F0205EB9E929EC070B8 /* WhiteSDK+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7E65B6A1C41565CE8E28745048012E52 /* Whiteboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE6AEA09664A54F0E54D945247887D9 /* Whiteboard-dummy.m */; };
+		80921C6BDC350195D4A33D77472C6189 /* TraitUpdateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502256B05F75B643EA53FF68919BCAC /* TraitUpdateHandler.swift */; };
+		80AED0675C95EF37FB5ABFFBA0FE90AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F63FD32AB75EDD088C61982E5C9F289 /* Foundation.framework */; };
+		822D883851C04C003282F66DA85ABB86 /* WhiteCombinePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DB5B0764CFBEEF1795B2D06E16290C /* WhiteCombinePlayer.m */; };
+		833A4AE07F5D6255BF8B901E100F34D5 /* WhitePlayerEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 41EE12E8D4DCEC51F5ED31DDCF6632AF /* WhitePlayerEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		869D26C769E748A952D071E1075A2176 /* WhiteDisplayerState.h in Headers */ = {isa = PBXBuildFile; fileRef = E5A40F894731ED87813A5DFCA6106ADD /* WhiteDisplayerState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86FA26174494885E3D7458D384002251 /* UIImage+ColorItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921027537C058490717766B2AB8BA50F /* UIImage+ColorItem.swift */; };
+		87D99C448CE0DAE147B3288FB4EFCBC5 /* WhiteSceneState.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBF585ACF9572B227597444CBF28867 /* WhiteSceneState.m */; };
+		8BB627FACB37E51658702382D276A65F /* YYModel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ECD4D3B0D611ADF1C5B61AB0D471418F /* YYModel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BFA3FBE6C918576A5009925CCCD22B2 /* WhiteMemberInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = D8984A1C5C1E5CCFB41E3434A8A0C4C7 /* WhiteMemberInformation.m */; };
+		8DE91FA26514C945EBF81309CA385429 /* Fastboard+FastPanelControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B55AC4C108426340943C0B22A92730 /* Fastboard+FastPanelControl.swift */; };
+		9191A3AD7A21A7A5C61598C42DDA9154 /* WhitePlayer+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F3EB8DC508BAF1493170C732922840A /* WhitePlayer+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		94D20EE2B612477AC1B63E6BC3D52216 /* WhiteConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 329A449842508FE84AD68768C6F7B183 /* WhiteConsts.m */; };
+		96A5B1EEC40A5E2F100A23394115FE81 /* WhiteCameraConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = CA5F13506A1F7BABDE501E3BAD8B81FF /* WhiteCameraConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		973D7A4C33CC84990BE753DA8F98DF75 /* WhiteConversionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2D5D23E3EE0706F5FA3E50FF9C89F8 /* WhiteConversionInfo.m */; };
+		97C66FC6A63AAFC316AF9A7D429AC88C /* UIView+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81013D6F7585AABD03BE4CE711D6C2 /* UIView+Theme.swift */; };
+		98803E93B520A40C68972E10859252A9 /* FastboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3D07A779311FD31CE462B91876D26 /* FastboardView.swift */; };
+		98C582FED81EE9DAFC4068F00C89D6D8 /* WhiteWebViewInjection.h in Headers */ = {isa = PBXBuildFile; fileRef = D700DCB92BB77D6644B968CD447A0DD0 /* WhiteWebViewInjection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98FC5DC91216E5BD146805F528F8C533 /* UIImage+tint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A3AF4F3A3E326870777AB23AA570DE /* UIImage+tint.swift */; };
+		995CE067CF05185E5A4529434A0AC196 /* WhiteRoomCallbacks.m in Sources */ = {isa = PBXBuildFile; fileRef = A8543D16C95F2FCE2DD5E0C715FE66EC /* WhiteRoomCallbacks.m */; };
+		9B3FD92DFBA0790B6D06E6752B2A55A2 /* WhiteBoardView+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1211382444D94BEC428004D6634FD2 /* WhiteBoardView+Theme.swift */; };
+		9D462C714254D5E2E5E0F6C354771909 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F93DB95A6C32DA31668145D91D5B911A /* WebKit.framework */; };
+		9E00234583A430E5F41805B90F81641D /* WhiteSDK+Room.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EB8D80BD32C1BC12231077E6924236 /* WhiteSDK+Room.m */; };
+		A5235DEF273763C1F7CD036E7C17E05F /* WhiteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 003FB2544F4C085153E28F78EBA478A2 /* WhiteObject.m */; };
+		A5E89EEDF24A7143668930EC23852006 /* WhitePanEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E196233F7B249F0469871A08B494098 /* WhitePanEvent.m */; };
+		A6CF3F8810818AC10380256D7EECE49B /* DWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F0D5F5572182D3543500BC50F013D6 /* DWKWebView.m */; };
+		A90D9F2433623A948783280404F2C72A /* WhiteEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EC39F577E3EED35A52145970AD9EE2D /* WhiteEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADB315D0C1041747C8E242E2D992CFA2 /* WhiteBoardView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D016DAA6DB5E795DACA706C4029816A /* WhiteBoardView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF199A9E558198AF8333BE31D3BCD199 /* RegularFastboardOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62577B811D365179AFC4A44C444766BB /* RegularFastboardOverlay.swift */; };
+		B0C500CD97F5507FC498742DDA5C0149 /* WhiteDisplayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFB92679E298764E7325F8A13186601 /* WhiteDisplayer.m */; };
+		B6815FDA13D1A75F40A8F692F6652790 /* WhiteGlobalState.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FEE1788A097D2833FC664EDA7F5838 /* WhiteGlobalState.m */; };
+		B7FDE3F5086E9EE3D4E9F061300E9628 /* Fastboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B5388C76928AA04868A9CCD2054F7C1 /* Fastboard-dummy.m */; };
+		B99C4E213A4511D9B56A11C5FD35DA03 /* Pods-ExampleFastboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2E7E5938CD474CFEBD911CD6D506D26 /* Pods-ExampleFastboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA4777D0022D3742C9443AC1167A94A6 /* WhitePptPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D94F708E3CF1547BF6EC762624E08B /* WhitePptPage.m */; };
+		BA5DC81AC375C35E3A9CC7923F1BEA25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F63FD32AB75EDD088C61982E5C9F289 /* Foundation.framework */; };
+		BDF4DA0314BF580E1F85CE2D54C49583 /* WhitePlayerState.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E72994B6767D58119DC136A4F4078D9 /* WhitePlayerState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFF5C751FBC22996DDCC9DD5D972E8D3 /* Appearancemanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AB6E1ECA42C0F10C5FED435A9E5D83 /* Appearancemanager.swift */; };
+		C1AE83D52E988599D4D6182C890BBC24 /* FastPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D88166B5DFFEE53BBA15BE9DAE6588D /* FastPanel.swift */; };
+		C3E07DCB20B0997371672BF9132C1B4F /* InternalApis.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B72113F4395013DCCD76B025A617EB9 /* InternalApis.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4F725A2EA0F6D5BD6B3C64ACDD5627C /* main.1413e9a0.css in Resources */ = {isa = PBXBuildFile; fileRef = EF048904DAA1011CF054749C2BCAE988 /* main.1413e9a0.css */; };
+		C847AE6A1EEFCDF094BCF6B036BF79EF /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B38A24B5426474FCB717E1E8781EF322 /* YYClassInfo.m */; };
+		C8569DCFABE1044FFE028DF315E63215 /* WhiteSdkConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 362EA6D7129DBA06F89004AA62DE9430 /* WhiteSdkConfiguration.m */; };
+		C8F40A2A6197D63EFBC88E6FF0CDB453 /* WhiteVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB41913BDF4C0C30FD621521954AE0E2 /* WhiteVideoView.m */; };
+		C935E3ACD1F2D2F60E967A21E81A649D /* NSObject+YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E03516A850D8DC0F628492D0546D16D /* NSObject+YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9F1482BC27A3EC7C6B0266BE53CD1A9 /* WhiteBoardView+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 56117D3D9CE17DA68B5329244E6FADBD /* WhiteBoardView+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		CA88723185501A656A7F54060125F20B /* WhiteRoomConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D4B4B676AB13F1C41E634A1991D398 /* WhiteRoomConfig.m */; };
+		CC176A1E70CC51C46DC3772C7314545D /* dsBridge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 880B1DD6F43F2EA8994941703AF8129C /* dsBridge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC9885694ABA194B7B9920206A2001A8 /* WhiteMemberInformation.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F11B9F227B8A9F2B8D7E23561F6720 /* WhiteMemberInformation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE06C1DE16FE2B7226EDB033191BCE11 /* IndicatorMoreButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDDA64C1BBA221D83A25ED8B2361840 /* IndicatorMoreButton.swift */; };
+		CF194F106ACA0DC9F79BB31DF28F46DD /* DelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C9437C003F39A1E2F65AE2AF62B428 /* DelegateProxy.swift */; };
+		D0691E0224CDA989E77CE5A61C07E400 /* WhitePlayerEvent+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 06217D7FCFB0C46B04C76F6D7C40C5B5 /* WhitePlayerEvent+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D1B621E37C0568093E3196CB439A593D /* FastOperation+NeedDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184510171D15F68D81F9331594DB7703 /* FastOperation+NeedDelete.swift */; };
+		D1F2BC7DD6C2DD664B58CC1511AED394 /* Load.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C67362301874182513559765E2E646 /* Load.m */; };
+		D4B9DDDAAE73C0A8DC6992CB8EF266CD /* SubPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194EDCF867FA1FA7AC10B087C9C966E2 /* SubPanelView.swift */; };
+		D5128380B6F26B4971BDB7A6EE4962BF /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = CCC1AC9E6943834AC888D1EA0460C522 /* index.html */; };
+		D5867B31E01E59C89B96B5A6B81B0ADE /* Fastboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56E0927BD8551DFA39A3E6B3C50EA411 /* Fastboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5A9AD783C2F0265F00EFB7A92455B4C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F78F729959C350C47985B2E93F8E9A4 /* AVFoundation.framework */; };
+		D5F0A5CC45B8527783A16788A7E8017F /* WhiteRectangleConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 328B9B35108E41462E6806057D807D33 /* WhiteRectangleConfig.m */; };
+		D8615A6F1B5EF73977B6CBF83A1DE22F /* WhiteRoomMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 930150DFD4092496D9C57D2DDCA11655 /* WhiteRoomMember.m */; };
+		D9DB6C17D0AF258B37950CF0863474F8 /* WhiteSdkConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = E6478E011CBEEEAAEF874C0BBECDB0B4 /* WhiteSdkConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA045093D1C79707052B652F2F34B044 /* Whiteboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C18205C1308B22F0B4D33B273C98A842 /* Whiteboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA5AB97C6C3A2055BBB1EABED58756FF /* DefaultTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0ACA32AD57447BCFF63E277B02FA59 /* DefaultTheme.swift */; };
+		DAEDA6B25D3190B8D6FBC90F10339326 /* FastOperationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD37272D70B057F14FB9FB33FDF6EF09 /* FastOperationItem.swift */; };
+		DC125292161AA70FEA73E8F39E4A89BB /* WhiteSDK+Replayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C4A2F66579BCB862FFF80D19A1BCDD /* WhiteSDK+Replayer.m */; };
+		DC3D4422B888C2E2D6E6A3AA111BF79C /* vendor.c49dfe75.js in Resources */ = {isa = PBXBuildFile; fileRef = D04986F54288F92C17F0EEDEBC518323 /* vendor.c49dfe75.js */; };
+		DD42338169A38D27D11F121DEE872D54 /* WhitePlayerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = AF73F1BC1E480290A84C55D11ABBBBD6 /* WhitePlayerConfig.m */; };
+		DD9C46E1BE929A667AC465BA17E16C43 /* WhiteScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 833C9E2F470D74CCCA3428E95FB2E96A /* WhiteScene.m */; };
+		DEA6FEDC2309DD5C57FCB817F23880BD /* WhiteConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F8C0D663A16A446F1376F020EAF388 /* WhiteConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEA8A96C710D4509F7DDCB82FC8855B8 /* WhiteRoomMember.h in Headers */ = {isa = PBXBuildFile; fileRef = 814EC143DB7AB7916CF0EF0C973E22AD /* WhiteRoomMember.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E28E9A8318849582F4754B45547FF696 /* WhiteBroadcastState.h in Headers */ = {isa = PBXBuildFile; fileRef = 34000DCA065799D1030D85139836B231 /* WhiteBroadcastState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E391AB70FD92770E61CDE716C593A897 /* WhiteConversionInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 70C068571A7A3B8B9CBB7F7B20E4D38E /* WhiteConversionInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E44334F438DF6FB59431CCCDDBFB43AC /* WhitePlayerTimeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A75F23DBF36432FA9B550DB8ADA1675 /* WhitePlayerTimeInfo.m */; };
+		E67445D9B6E7E359794F3AF4FADFA194 /* WhiteSDK+Replayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 472950EAF5FE52612A47F2EA852D79A5 /* WhiteSDK+Replayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7AB999C555E1906B0C9A1A86C82772E /* WhiteRoom.h in Headers */ = {isa = PBXBuildFile; fileRef = 40DDF7DE85D78B58E24C48CF3C8A2E33 /* WhiteRoom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E95CD3D30B262B7D8EA40AC2D9E466B0 /* WhiteRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E9111924D8A8EDDE939FC6A567620F3 /* WhiteRoom.m */; };
+		E9CCE4D2B3D117BDFB9DB3772F249423 /* WhiteConsts.h in Headers */ = {isa = PBXBuildFile; fileRef = C13600E933DFBB80ADA3E926FE04922F /* WhiteConsts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA6822EBCDB79C9B06C7CB98BCEBC99A /* WhiteCameraState.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E141F13C62C38ABB01A7BBA87D9D12 /* WhiteCameraState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAF566F374191E59D243156A5A4273C2 /* WhiteCommonCallbacks.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BE522B141CCBF0FA0C84D52AA2947C7 /* WhiteCommonCallbacks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC081A421F21B5737E610AE5D466E7CF /* WhiteCameraBound.h in Headers */ = {isa = PBXBuildFile; fileRef = A1ECDF0116D26F81C10D9F08B3D95016 /* WhiteCameraBound.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE8D8946D31DB072470B871C5877CCB3 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31B9708ABF0A2A4933A407E0A6BBB31 /* Theme.swift */; };
+		EF800A2712E566CAF758961B2B3A026D /* DefaultOperationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1317BBA43D036CC2E13B36806D445199 /* DefaultOperationItem.swift */; };
+		EFAE0C8F75B7FA8586D47C37B0E77CDB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03504BC490B33B26405B98309F94474E /* UIKit.framework */; };
+		F0025A336061BBEEB0DF26C115007DFD /* Whiteboard-Whiteboard in Resources */ = {isa = PBXBuildFile; fileRef = B43929320E40A048DEF21A95905050F2 /* Whiteboard-Whiteboard */; };
+		F0293F042302388A770965ABCFB0709E /* FastPanelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F73332845B641C2EBF52C7AAF36BA0 /* FastPanelDelegate.swift */; };
+		F069641032BBE0AE65E0D0195CB9A7A1 /* WhiteFontFace.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDE7D8D131A9514964F8B9CDF262E5B /* WhiteFontFace.m */; };
+		F2507CD478B4ECB2F4B207869091DD45 /* FastProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDF56074DBCCC578464D8C84353B440 /* FastProxy.m */; };
+		F54FBC58C9327AEDBF7ADAF455626DDC /* FastProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C86760355ADD372E615FEE805EA0CC /* FastProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5FE73BC1F448EEFE1F26C54945DF83C /* TraitCollection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6A5AE1365BE050181FF5B010D7DCFB /* TraitCollection+Extension.swift */; };
+		F6FFEC8F8EAAA3831B26A8D20D14A206 /* WhiteSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A03DC271163891B5E7A5CAF4D1D5EC /* WhiteSliderView.m */; };
+		F706A81AB70A702087EBFBDE9FA7A405 /* WhiteRoomConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 67E09F71F6FF8128D33AD7B67AD1E4C8 /* WhiteRoomConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAFF60EC473EF771757AC9BBD846D95D /* WhiteCameraConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BDFAF7F19ACAF234F6C353FC5DD5CA /* WhiteCameraConfig.m */; };
+		FCF6AB05E56AD7909DC1EA18CACE352A /* WhiteMemberState.h in Headers */ = {isa = PBXBuildFile; fileRef = 81A5543476B23B3C6AA2808541F6E22D /* WhiteMemberState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF34436E3B351EA05329C53162D75C39 /* WhiteGlobalState.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C081140D51844C5D99B246F84B5A7F /* WhiteGlobalState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFC550CF9802DD814A5713EE537D534E /* WhitePlayerState.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9DD8CE8791120E0EF2D69CAD80FF4F /* WhitePlayerState.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25FBD71D660B3370354DDED48FACFF25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84B44807A12996D487A4A591A481D6A0;
+			remoteInfo = YYModel;
+		};
+		6D514EB40A847F18EA1F9F915C571836 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EB9E06B4A4636CA9288D815FC9DBFC5;
+			remoteInfo = "Whiteboard-Whiteboard";
+		};
+		6F974599E402AF5C33024078442679D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 887E769F555AF76F514A7276E2BA1CB8;
+			remoteInfo = Whiteboard;
+		};
+		9181708CE1F043A62D1FB9378AB80468 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 887E769F555AF76F514A7276E2BA1CB8;
+			remoteInfo = Whiteboard;
+		};
+		ADF88C9190032475C9C4753AFC9D0690 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A6F633BD0A4B9EF892715BEB76AC948;
+			remoteInfo = dsBridge;
+		};
+		B1BA85636593B8E08F035F44C6E5BB69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A6F633BD0A4B9EF892715BEB76AC948;
+			remoteInfo = dsBridge;
+		};
+		BFC977DD6059C534C6BC7ACF1387F5E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE49CDB6FCC514206F1F9C497AE5AB09;
+			remoteInfo = Fastboard;
+		};
+		CBF66BDE818A63F20A6DC23F545ACA0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84B44807A12996D487A4A591A481D6A0;
+			remoteInfo = YYModel;
+		};
+		E64C0C3B3FDEE5C3D82FABFAC2F19D20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 750579D9E74AA25AB515AD198A40FF8D;
+			remoteInfo = "Fastboard-Icons";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		003FB2544F4C085153E28F78EBA478A2 /* WhiteObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteObject.m; path = Whiteboard/Classes/Model/WhiteObject.m; sourceTree = "<group>"; };
+		00C67362301874182513559765E2E646 /* Load.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Load.m; path = Fastboard/Classes/Public/Load.m; sourceTree = "<group>"; };
+		012DF6090A5C10C3FB163C751E999C03 /* WhiteVideoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteVideoView.h; path = Whiteboard/Classes/NativeReplayer/WhiteVideoView.h; sourceTree = "<group>"; };
+		03504BC490B33B26405B98309F94474E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		06217D7FCFB0C46B04C76F6D7C40C5B5 /* WhitePlayerEvent+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WhitePlayerEvent+Private.h"; path = "Whiteboard/Classes/Replayer/WhitePlayerEvent+Private.h"; sourceTree = "<group>"; };
+		06D6596827493A94E1C0D262A3D42783 /* YYModel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YYModel-Info.plist"; sourceTree = "<group>"; };
+		06FC1FF43C8179C2DCAEDD5604C21789 /* UIColor+NSNumber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+NSNumber.swift"; path = "Fastboard/Classes/Extension/UIColor+NSNumber.swift"; sourceTree = "<group>"; };
+		07B55AC4C108426340943C0B22A92730 /* Fastboard+FastPanelControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Fastboard+FastPanelControl.swift"; path = "Fastboard/Classes/Public/Fastboard/Fastboard+FastPanelControl.swift"; sourceTree = "<group>"; };
+		0970D9657B85F0178A4556804DF07031 /* WhitePptPage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhitePptPage.h; path = Whiteboard/Classes/Object/WhitePptPage.h; sourceTree = "<group>"; };
+		0A75F23DBF36432FA9B550DB8ADA1675 /* WhitePlayerTimeInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhitePlayerTimeInfo.m; path = Whiteboard/Classes/Replayer/WhitePlayerTimeInfo.m; sourceTree = "<group>"; };
+		0AE6AEA09664A54F0E54D945247887D9 /* Whiteboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Whiteboard-dummy.m"; sourceTree = "<group>"; };
+		0B5388C76928AA04868A9CCD2054F7C1 /* Fastboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Fastboard-dummy.m"; sourceTree = "<group>"; };
+		0B72113F4395013DCCD76B025A617EB9 /* InternalApis.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = InternalApis.h; path = dsbridge/InternalApis.h; sourceTree = "<group>"; };
+		0BDDA64C1BBA221D83A25ED8B2361840 /* IndicatorMoreButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndicatorMoreButton.swift; path = Fastboard/Classes/Public/View/Panel/IndicatorMoreButton.swift; sourceTree = "<group>"; };
+		0C184F76833680DC2A6B15EB9D6D16EA /* WhitePlayerTimeInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhitePlayerTimeInfo.h; path = Whiteboard/Classes/Replayer/WhitePlayerTimeInfo.h; sourceTree = "<group>"; };
+		0EFAA4059D8A546FCEEB1CB9FF1EF17B /* WhitePlayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhitePlayer.m; path = Whiteboard/Classes/Replayer/WhitePlayer.m; sourceTree = "<group>"; };
+		0F63FD32AB75EDD088C61982E5C9F289 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		0F78F729959C350C47985B2E93F8E9A4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		11AB6E1ECA42C0F10C5FED435A9E5D83 /* Appearancemanager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Appearancemanager.swift; path = Fastboard/Classes/Public/Theme/Appearancemanager.swift; sourceTree = "<group>"; };
+		1317BBA43D036CC2E13B36806D445199 /* DefaultOperationItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultOperationItem.swift; path = Fastboard/Classes/Public/View/Panel/Operation/DefaultOperationItem.swift; sourceTree = "<group>"; };
+		13C4A2F66579BCB862FFF80D19A1BCDD /* WhiteSDK+Replayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "WhiteSDK+Replayer.m"; path = "Whiteboard/Classes/Replayer/WhiteSDK+Replayer.m"; sourceTree = "<group>"; };
+		148C00EF8648485BCB838C4B0121CFE8 /* YYModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYModel.release.xcconfig; sourceTree = "<group>"; };
+		1502256B05F75B643EA53FF68919BCAC /* TraitUpdateHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TraitUpdateHandler.swift; path = Fastboard/Classes/Extension/TraitUpdateHandler.swift; sourceTree = "<group>"; };
+		167AC81DF09C4F5BCF501C50009523CC /* ResourceBundle-Icons-Fastboard-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Icons-Fastboard-Info.plist"; sourceTree = "<group>"; };
+		17C9437C003F39A1E2F65AE2AF62B428 /* DelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DelegateProxy.swift; path = Fastboard/Classes/Proxy/DelegateProxy.swift; sourceTree = "<group>"; };
+		184510171D15F68D81F9331594DB7703 /* FastOperation+NeedDelete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FastOperation+NeedDelete.swift"; path = "Fastboard/Classes/Public/View/Panel/Operation/FastOperation+NeedDelete.swift"; sourceTree = "<group>"; };
+		18BB9AE98598D0DF7654547A7E3D8BB8 /* Pods-ExampleFastboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ExampleFastboard-dummy.m"; sourceTree = "<group>"; };
+		19375E05592C26A1A78A6FBDCA56188D /* Fastboard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Fastboard.modulemap; sourceTree = "<group>"; };
+		194EDCF867FA1FA7AC10B087C9C966E2 /* SubPanelView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubPanelView.swift; path = Fastboard/Classes/Public/View/Panel/SubPanelView.swift; sourceTree = "<group>"; };
+		19E7BB9F1C61F5EDBAC16268FE0E6F58 /* WhiteRectangleConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteRectangleConfig.h; path = Whiteboard/Classes/Object/WhiteRectangleConfig.h; sourceTree = "<group>"; };
+		1CCAE0F768653B6CA6191DF6EFBFB9EE /* ThemeManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThemeManager.swift; path = Fastboard/Classes/Public/Theme/ThemeManager.swift; sourceTree = "<group>"; };
+		1D0DCA552B4BD3039BC415A0AB6F6326 /* YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYModel.h; path = YYModel/YYModel.h; sourceTree = "<group>"; };
+		1E196233F7B249F0469871A08B494098 /* WhitePanEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhitePanEvent.m; path = Whiteboard/Classes/Object/WhitePanEvent.m; sourceTree = "<group>"; };
+		20B9A94FDB2626EEA54158FD7E6C3704 /* web-sdk.b9b319d7.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "web-sdk.b9b319d7.js"; path = "Whiteboard/Resource/web-sdk.b9b319d7.js"; sourceTree = "<group>"; };
+		21EDCB988FC865D9238B41248D929BB5 /* WhiteRoom+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WhiteRoom+Private.h"; path = "Whiteboard/Classes/Room/WhiteRoom+Private.h"; sourceTree = "<group>"; };
+		22AAF896E446D0AD6E1F8FFC893E7AD7 /* FastboardDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FastboardDelegate.swift; path = Fastboard/Classes/Public/Fastboard/FastboardDelegate.swift; sourceTree = "<group>"; };
+		2338967813D2B6011268E4CADBECB798 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		249C5145B0DF15C21965D8D6F63D823C /* FastboardOverlay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FastboardOverlay.swift; path = Fastboard/Classes/Public/View/Overlay/FastboardOverlay.swift; sourceTree = "<group>"; };
+		26AA374C3DC32A509662950D37302081 /* WhiteMemberState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteMemberState.m; path = Whiteboard/Classes/Object/WhiteMemberState.m; sourceTree = "<group>"; };
+		2837FA435B7FDDF9817D5BAAEC09289A /* UIColor+Convince.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Convince.swift"; path = "Fastboard/Classes/Extension/UIColor+Convince.swift"; sourceTree = "<group>"; };
+		28F8C0D663A16A446F1376F020EAF388 /* WhiteConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteConverter.h; path = Whiteboard/Classes/Converter/WhiteConverter.h; sourceTree = "<group>"; };
+		2A533F32CCD675D41DE356029642E787 /* WhiteCombinePlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteCombinePlayer.h; path = Whiteboard/Classes/NativeReplayer/WhiteCombinePlayer.h; sourceTree = "<group>"; };
+		2B10A29333BBBAFBEBA0078D8707B1B4 /* dsBridge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = dsBridge.modulemap; sourceTree = "<group>"; };
+		2B4229F49535A6B6C77D204D5933F94F /* WhiteAppParam.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteAppParam.h; path = Whiteboard/Classes/Object/WhiteAppParam.h; sourceTree = "<group>"; };
+		2F41F6ADDC4F6C12F5C364CA86E40142 /* WhiteBroadcastState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteBroadcastState.m; path = Whiteboard/Classes/Room/WhiteBroadcastState.m; sourceTree = "<group>"; };
+		31A542D341FB8D59D63D79B414F541F6 /* Pods-ExampleFastboard-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ExampleFastboard-acknowledgements.plist"; sourceTree = "<group>"; };
+		324DED6ABD48A30BF4BF9789E0A14E3C /* WhiteConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteConverter.m; path = Whiteboard/Classes/Converter/WhiteConverter.m; sourceTree = "<group>"; };
+		32527D7BD0EC23C05DD4A151A391D7B3 /* Fastboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Fastboard.swift; path = Fastboard/Classes/Public/Fastboard/Fastboard.swift; sourceTree = "<group>"; };
+		328B9B35108E41462E6806057D807D33 /* WhiteRectangleConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteRectangleConfig.m; path = Whiteboard/Classes/Object/WhiteRectangleConfig.m; sourceTree = "<group>"; };
+		329A449842508FE84AD68768C6F7B183 /* WhiteConsts.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteConsts.m; path = Whiteboard/Classes/Object/WhiteConsts.m; sourceTree = "<group>"; };
+		32B54EEAA9AB575D9669E144A5C6DD38 /* ControlBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ControlBar.swift; path = Fastboard/Classes/Public/View/Panel/ControlBar.swift; sourceTree = "<group>"; };
+		32BB212DF09F9C0F5A223375D7AEB70C /* Whiteboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Whiteboard.release.xcconfig; sourceTree = "<group>"; };
+		33EB2F11EE7FE3CC3C1DBE44AC311454 /* Fastboard-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Fastboard-Info.plist"; sourceTree = "<group>"; };
+		34000DCA065799D1030D85139836B231 /* WhiteBroadcastState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteBroadcastState.h; path = Whiteboard/Classes/Room/WhiteBroadcastState.h; sourceTree = "<group>"; };
+		362EA6D7129DBA06F89004AA62DE9430 /* WhiteSdkConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteSdkConfiguration.m; path = Whiteboard/Classes/SDK/WhiteSdkConfiguration.m; sourceTree = "<group>"; };
+		36D679DA127B7F31C40E98C0C56ACE7D /* dsBridge-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "dsBridge-prefix.pch"; sourceTree = "<group>"; };
+		3A8F6DD664C3A06A69D85C4B49A03CB8 /* WhiteImageInformation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteImageInformation.h; path = Whiteboard/Classes/Room/WhiteImageInformation.h; sourceTree = "<group>"; };
+		3C7A5C3D7FD1E92F43269ABB9DBDC904 /* dsBridge-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "dsBridge-Info.plist"; sourceTree = "<group>"; };
+		3D88166B5DFFEE53BBA15BE9DAE6588D /* FastPanel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FastPanel.swift; path = Fastboard/Classes/Public/View/Panel/FastPanel.swift; sourceTree = "<group>"; };
+		401C360D39B6A9069FD8843CBE059C30 /* WhiteBoardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteBoardView.m; path = Whiteboard/Classes/Displayer/WhiteBoardView.m; sourceTree = "<group>"; };
+		40DDF7DE85D78B58E24C48CF3C8A2E33 /* WhiteRoom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteRoom.h; path = Whiteboard/Classes/Room/WhiteRoom.h; sourceTree = "<group>"; };
+		41EE12E8D4DCEC51F5ED31DDCF6632AF /* WhitePlayerEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhitePlayerEvent.h; path = Whiteboard/Classes/Replayer/WhitePlayerEvent.h; sourceTree = "<group>"; };
+		44B63830650257C16E9D86C6ACA5B839 /* WhiteAudioMixerBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteAudioMixerBridge.h; path = Whiteboard/Classes/Displayer/WhiteAudioMixerBridge.h; sourceTree = "<group>"; };
+		472950EAF5FE52612A47F2EA852D79A5 /* WhiteSDK+Replayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WhiteSDK+Replayer.h"; path = "Whiteboard/Classes/Replayer/WhiteSDK+Replayer.h"; sourceTree = "<group>"; };
+		48E38291C57ABE5C21B488A22E8D59C1 /* Whiteboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Whiteboard.debug.xcconfig; sourceTree = "<group>"; };
+		49D94F708E3CF1547BF6EC762624E08B /* WhitePptPage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhitePptPage.m; path = Whiteboard/Classes/Object/WhitePptPage.m; sourceTree = "<group>"; };
+		4AFB293023AFCC13A1891A645DB499DE /* Region.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Region.swift; path = Fastboard/Classes/Public/Region.swift; sourceTree = "<group>"; };
+		4CC9F1648CB76297821DDEAB5A04155E /* WhitePlayerConsts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhitePlayerConsts.h; path = Whiteboard/Classes/Replayer/WhitePlayerConsts.h; sourceTree = "<group>"; };
+		4DA94038B98592F79EE9064C3BC77219 /* WhiteDisplayer+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WhiteDisplayer+Private.h"; path = "Whiteboard/Classes/Displayer/WhiteDisplayer+Private.h"; sourceTree = "<group>"; };
+		4E9111924D8A8EDDE939FC6A567620F3 /* WhiteRoom.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteRoom.m; path = Whiteboard/Classes/Room/WhiteRoom.m; sourceTree = "<group>"; };
+		51050B42D5D6BA9EEE2FAFEF69311394 /* WhitePlayerEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhitePlayerEvent.m; path = Whiteboard/Classes/Replayer/WhitePlayerEvent.m; sourceTree = "<group>"; };
+		53CBD3B3AD9E0373C84B47F2F7575DE5 /* FastRoomPhase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FastRoomPhase.swift; path = Fastboard/Classes/Public/FastRoomPhase.swift; sourceTree = "<group>"; };
+		545E6FA1FD3CD5A6E583BA2ADAD61EE2 /* Fastboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Fastboard.debug.xcconfig; sourceTree = "<group>"; };
+		54E141F13C62C38ABB01A7BBA87D9D12 /* WhiteCameraState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteCameraState.h; path = Whiteboard/Classes/Object/WhiteCameraState.h; sourceTree = "<group>"; };
+		54EB8D80BD32C1BC12231077E6924236 /* WhiteSDK+Room.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "WhiteSDK+Room.m"; path = "Whiteboard/Classes/Room/WhiteSDK+Room.m"; sourceTree = "<group>"; };
+		56117D3D9CE17DA68B5329244E6FADBD /* WhiteBoardView+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WhiteBoardView+Private.h"; path = "Whiteboard/Classes/Displayer/WhiteBoardView+Private.h"; sourceTree = "<group>"; };
+		56E0927BD8551DFA39A3E6B3C50EA411 /* Fastboard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Fastboard-umbrella.h"; sourceTree = "<group>"; };
+		5798D661D3234FF76CA03506CF14FF11 /* Fastboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Fastboard.release.xcconfig; sourceTree = "<group>"; };
+		59F73332845B641C2EBF52C7AAF36BA0 /* FastPanelDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FastPanelDelegate.swift; path = Fastboard/Classes/Public/View/Panel/FastPanelDelegate.swift; sourceTree = "<group>"; };
+		5AA031671FC29AC64C72E1440A500AE5 /* WhiteSDK.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteSDK.m; path = Whiteboard/Classes/SDK/WhiteSDK.m; sourceTree = "<group>"; };
+		5B864B6F2D632F7DF01AF379F4D10317 /* DSCallInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSCallInfo.m; path = dsbridge/DSCallInfo.m; sourceTree = "<group>"; };
+		5BBF585ACF9572B227597444CBF28867 /* WhiteSceneState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteSceneState.m; path = Whiteboard/Classes/Object/WhiteSceneState.m; sourceTree = "<group>"; };
+		5E1211382444D94BEC428004D6634FD2 /* WhiteBoardView+Theme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "WhiteBoardView+Theme.swift"; path = "Fastboard/Classes/Extension/WhiteBoardView+Theme.swift"; sourceTree = "<group>"; };
+		62577B811D365179AFC4A44C444766BB /* RegularFastboardOverlay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegularFastboardOverlay.swift; path = Fastboard/Classes/Public/View/Overlay/Trait/RegularFastboardOverlay.swift; sourceTree = "<group>"; };
+		6301F5E332B4A1F7302BCF9DAAB78FE3 /* main.f1d5e41e.js */ = {isa = PBXFileReference; includeInIndex = 1; name = main.f1d5e41e.js; path = Whiteboard/Resource/main.f1d5e41e.js; sourceTree = "<group>"; };
+		63A3AF4F3A3E326870777AB23AA570DE /* UIImage+tint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+tint.swift"; path = "Fastboard/Classes/Extension/UIImage+tint.swift"; sourceTree = "<group>"; };
+		640FE42BD3D6026F63E07065010B953C /* CompactFastboardOverlay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompactFastboardOverlay.swift; path = Fastboard/Classes/Public/View/Overlay/Trait/CompactFastboardOverlay.swift; sourceTree = "<group>"; };
+		66AAAB11C699A6CBBDE8E8EA8E3B6D4A /* JSBUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSBUtil.m; path = dsbridge/JSBUtil.m; sourceTree = "<group>"; };
+		67E066779799030B7E8339A00626A821 /* WhiteSliderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteSliderView.h; path = Whiteboard/Classes/NativeReplayer/WhiteSliderView.h; sourceTree = "<group>"; };
+		67E09F71F6FF8128D33AD7B67AD1E4C8 /* WhiteRoomConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteRoomConfig.h; path = Whiteboard/Classes/Room/WhiteRoomConfig.h; sourceTree = "<group>"; };
+		6AF279AB629184C658EFA156D552216E /* Fastboard */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Fastboard; path = Fastboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CDF5F4CDA1C8BA8726AFD47F3D1CCFB /* WhiteRoomCallbacks+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WhiteRoomCallbacks+Private.h"; path = "Whiteboard/Classes/Room/WhiteRoomCallbacks+Private.h"; sourceTree = "<group>"; };
+		6D6A5AE1365BE050181FF5B010D7DCFB /* TraitCollection+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TraitCollection+Extension.swift"; path = "Fastboard/Classes/Extension/TraitCollection+Extension.swift"; sourceTree = "<group>"; };
+		6EC39F577E3EED35A52145970AD9EE2D /* WhiteEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteEvent.h; path = Whiteboard/Classes/Object/WhiteEvent.h; sourceTree = "<group>"; };
+		7066D7D37E347932E07719244E00465B /* DefaultOperationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultOperationType.swift; path = Fastboard/Classes/Public/View/Panel/Operation/DefaultOperationType.swift; sourceTree = "<group>"; };
+		70C068571A7A3B8B9CBB7F7B20E4D38E /* WhiteConversionInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteConversionInfo.h; path = Whiteboard/Classes/Converter/WhiteConversionInfo.h; sourceTree = "<group>"; };
+		73DB5B0764CFBEEF1795B2D06E16290C /* WhiteCombinePlayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteCombinePlayer.m; path = Whiteboard/Classes/NativeReplayer/WhiteCombinePlayer.m; sourceTree = "<group>"; };
+		74F3D07A779311FD31CE462B91876D26 /* FastboardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FastboardView.swift; path = Fastboard/Classes/Public/View/FastboardView.swift; sourceTree = "<group>"; };
+		7803ACFA2724D5B521F30CF616ACDFB4 /* Pods-ExampleFastboard-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ExampleFastboard-acknowledgements.markdown"; sourceTree = "<group>"; };
+		783BB5E1DD6CAFDD96466237DBA3B5E9 /* NSObject+YYModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYModel.m"; path = "YYModel/NSObject+YYModel.m"; sourceTree = "<group>"; };
+		797D46A7F1534583458B98BF2BB479A7 /* dsBridge */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = dsBridge; path = dsBridge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A53F616413A6413602123C287A3D24F /* WhiteImageInformation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteImageInformation.m; path = Whiteboard/Classes/Room/WhiteImageInformation.m; sourceTree = "<group>"; };
+		7AAE3619C5D94BC14A75A723B2694F11 /* runtime.36e3f0da.js */ = {isa = PBXFileReference; includeInIndex = 1; name = runtime.36e3f0da.js; path = Whiteboard/Resource/runtime.36e3f0da.js; sourceTree = "<group>"; };
+		7BF8E0C549991D8E06C71E366D0ED1E1 /* Fastboard-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Fastboard-prefix.pch"; sourceTree = "<group>"; };
+		80D4B4B676AB13F1C41E634A1991D398 /* WhiteRoomConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteRoomConfig.m; path = Whiteboard/Classes/Room/WhiteRoomConfig.m; sourceTree = "<group>"; };
+		814EC143DB7AB7916CF0EF0C973E22AD /* WhiteRoomMember.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteRoomMember.h; path = Whiteboard/Classes/Object/WhiteRoomMember.h; sourceTree = "<group>"; };
+		8184D1F1AAEF218BC926207AE3098DF9 /* InternalApis.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = InternalApis.m; path = dsbridge/InternalApis.m; sourceTree = "<group>"; };
+		81A5543476B23B3C6AA2808541F6E22D /* WhiteMemberState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteMemberState.h; path = Whiteboard/Classes/Object/WhiteMemberState.h; sourceTree = "<group>"; };
+		82D696F5F573FA9D8AC7A97B6CA05ECF /* FastOperation+NeedColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FastOperation+NeedColor.swift"; path = "Fastboard/Classes/Public/View/Panel/Operation/FastOperation+NeedColor.swift"; sourceTree = "<group>"; };
+		833C9E2F470D74CCCA3428E95FB2E96A /* WhiteScene.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteScene.m; path = Whiteboard/Classes/Object/WhiteScene.m; sourceTree = "<group>"; };
+		83DA12D47565C2719EBDBA345BA9098C /* Pods-ExampleFastboard-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ExampleFastboard-frameworks.sh"; sourceTree = "<group>"; };
+		84F17837BBDA266F87EF1EBF9D3DDDE6 /* ApplianceButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApplianceButton.swift; path = Fastboard/Classes/Public/View/Panel/Operation/ApplianceButton.swift; sourceTree = "<group>"; };
+		86DC84643539A9EFA9582E6B0D6A0195 /* Pods-ExampleFastboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExampleFastboard.release.xcconfig"; sourceTree = "<group>"; };
+		877742624EA730EF01344F77899BBCA9 /* WhitePlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhitePlayer.h; path = Whiteboard/Classes/Replayer/WhitePlayer.h; sourceTree = "<group>"; };
+		880B1DD6F43F2EA8994941703AF8129C /* dsBridge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "dsBridge-umbrella.h"; sourceTree = "<group>"; };
+		8972E11001B297AEC3940F8D4C1DB383 /* vendor.5611aab0.css */ = {isa = PBXFileReference; includeInIndex = 1; name = vendor.5611aab0.css; path = Whiteboard/Resource/vendor.5611aab0.css; sourceTree = "<group>"; };
+		8B11B41FC0A274E444B2172261A7F85A /* WhiteRoomCallbacks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteRoomCallbacks.h; path = Whiteboard/Classes/Room/WhiteRoomCallbacks.h; sourceTree = "<group>"; };
+		8BE522B141CCBF0FA0C84D52AA2947C7 /* WhiteCommonCallbacks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteCommonCallbacks.h; path = Whiteboard/Classes/Displayer/WhiteCommonCallbacks.h; sourceTree = "<group>"; };
+		8C1A92A8D79704CB4591DF91AD80DBC9 /* WhiteRoomState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteRoomState.h; path = Whiteboard/Classes/Room/WhiteRoomState.h; sourceTree = "<group>"; };
+		8C33514DC11B9FBC44E95116A538305C /* Pods-ExampleFastboard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ExampleFastboard.modulemap"; sourceTree = "<group>"; };
+		8D016DAA6DB5E795DACA706C4029816A /* WhiteBoardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteBoardView.h; path = Whiteboard/Classes/Displayer/WhiteBoardView.h; sourceTree = "<group>"; };
+		8E03516A850D8DC0F628492D0546D16D /* NSObject+YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YYModel.h"; path = "YYModel/NSObject+YYModel.h"; sourceTree = "<group>"; };
+		8E72994B6767D58119DC136A4F4078D9 /* WhitePlayerState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhitePlayerState.h; path = Whiteboard/Classes/Replayer/WhitePlayerState.h; sourceTree = "<group>"; };
+		902DE4ADF76FAD75E945CC536F66BA0D /* Pods-ExampleFastboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExampleFastboard.debug.xcconfig"; sourceTree = "<group>"; };
+		90663C4638F994A74C36DF56B43D3A15 /* dsBridge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = dsBridge.debug.xcconfig; sourceTree = "<group>"; };
+		9200559293C82CB0DE3F9710552527D1 /* YYModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYModel.debug.xcconfig; sourceTree = "<group>"; };
+		921027537C058490717766B2AB8BA50F /* UIImage+ColorItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+ColorItem.swift"; path = "Fastboard/Classes/Extension/UIImage+ColorItem.swift"; sourceTree = "<group>"; };
+		9217F072F183ADE7E1CEB6438CDD5789 /* Pods-ExampleFastboard */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ExampleFastboard"; path = Pods_ExampleFastboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92842DC65A4EE2E5A0E11A62B49986FA /* Fastboard-Icons */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Fastboard-Icons"; path = Icons.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		930150DFD4092496D9C57D2DDCA11655 /* WhiteRoomMember.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteRoomMember.m; path = Whiteboard/Classes/Object/WhiteRoomMember.m; sourceTree = "<group>"; };
+		93B223BA84B4BF2A9018D494C8729058 /* WhiteSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteSDK.h; path = Whiteboard/Classes/SDK/WhiteSDK.h; sourceTree = "<group>"; };
+		9569852661A3D1301351B9940E4A890D /* YYModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYModel-dummy.m"; sourceTree = "<group>"; };
+		972A1D2E8C2B89BB8266B22579015DAF /* Icons.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Icons.xcassets; path = Fastboard/Assets/Icons.xcassets; sourceTree = "<group>"; };
+		9A0D479FCF66A80EA39AF841A2B9ECD4 /* JSBUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSBUtil.h; path = dsbridge/JSBUtil.h; sourceTree = "<group>"; };
+		9BC2E257E673103EED87637A6DDEBD05 /* WhiteSceneState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteSceneState.h; path = Whiteboard/Classes/Object/WhiteSceneState.h; sourceTree = "<group>"; };
+		9BDE7D8D131A9514964F8B9CDF262E5B /* WhiteFontFace.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteFontFace.m; path = Whiteboard/Classes/Object/WhiteFontFace.m; sourceTree = "<group>"; };
+		9C2AFC206A5893249C1CFBFC3F3F1BAF /* dsBridge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "dsBridge-dummy.m"; sourceTree = "<group>"; };
+		9C5071C47D29002F66D07668F736E8B1 /* Pods-ExampleFastboard-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ExampleFastboard-Info.plist"; sourceTree = "<group>"; };
+		9C70DC4939B92EDB419C1917EF3BF74C /* WhiteObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteObject.h; path = Whiteboard/Classes/Model/WhiteObject.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F3EB8DC508BAF1493170C732922840A /* WhitePlayer+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WhitePlayer+Private.h"; path = "Whiteboard/Classes/Replayer/WhitePlayer+Private.h"; sourceTree = "<group>"; };
+		A1ECDF0116D26F81C10D9F08B3D95016 /* WhiteCameraBound.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteCameraBound.h; path = Whiteboard/Classes/Object/WhiteCameraBound.h; sourceTree = "<group>"; };
+		A2E7E5938CD474CFEBD911CD6D506D26 /* Pods-ExampleFastboard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ExampleFastboard-umbrella.h"; sourceTree = "<group>"; };
+		A4F11B9F227B8A9F2B8D7E23561F6720 /* WhiteMemberInformation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteMemberInformation.h; path = Whiteboard/Classes/Object/WhiteMemberInformation.h; sourceTree = "<group>"; };
+		A8543D16C95F2FCE2DD5E0C715FE66EC /* WhiteRoomCallbacks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteRoomCallbacks.m; path = Whiteboard/Classes/Room/WhiteRoomCallbacks.m; sourceTree = "<group>"; };
+		A9F0D5F5572182D3543500BC50F013D6 /* DWKWebView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWKWebView.m; path = dsbridge/DWKWebView.m; sourceTree = "<group>"; };
+		AB41913BDF4C0C30FD621521954AE0E2 /* WhiteVideoView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteVideoView.m; path = Whiteboard/Classes/NativeReplayer/WhiteVideoView.m; sourceTree = "<group>"; };
+		AD81013D6F7585AABD03BE4CE711D6C2 /* UIView+Theme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Theme.swift"; path = "Fastboard/Classes/Extension/UIView+Theme.swift"; sourceTree = "<group>"; };
+		AEBCE0D8DDB86F40B60905588F9443AC /* WhiteSDK+Room.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WhiteSDK+Room.h"; path = "Whiteboard/Classes/Room/WhiteSDK+Room.h"; sourceTree = "<group>"; };
+		AF73F1BC1E480290A84C55D11ABBBBD6 /* WhitePlayerConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhitePlayerConfig.m; path = Whiteboard/Classes/Replayer/WhitePlayerConfig.m; sourceTree = "<group>"; };
+		B0796CC3DC43FC46C7DC8985538E02C0 /* Whiteboard-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Whiteboard-Info.plist"; sourceTree = "<group>"; };
+		B20A212A8F680E519D07DC92C26A4BC3 /* WhiteDisplayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteDisplayer.h; path = Whiteboard/Classes/Displayer/WhiteDisplayer.h; sourceTree = "<group>"; };
+		B38A24B5426474FCB717E1E8781EF322 /* YYClassInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYClassInfo.m; path = YYModel/YYClassInfo.m; sourceTree = "<group>"; };
+		B39B03FEA6533E8EBDFB1CB1759409D2 /* WhiteDisplayerState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteDisplayerState.m; path = Whiteboard/Classes/Displayer/WhiteDisplayerState.m; sourceTree = "<group>"; };
+		B43929320E40A048DEF21A95905050F2 /* Whiteboard-Whiteboard */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Whiteboard-Whiteboard"; path = Whiteboard.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4EB586AEB5E896B541666EA0D5B1EFD /* WhiteFontFace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteFontFace.h; path = Whiteboard/Classes/Object/WhiteFontFace.h; sourceTree = "<group>"; };
+		BAB949EFBF77B3321E6F53CE3C39229B /* dsbridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dsbridge.h; path = dsbridge/dsbridge.h; sourceTree = "<group>"; };
+		BAD546D2FC078769EC719DF78E82CB8D /* Whiteboard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Whiteboard.modulemap; sourceTree = "<group>"; };
+		BBE187B93098193E79F856527170EF83 /* WhiteRoomState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteRoomState.m; path = Whiteboard/Classes/Room/WhiteRoomState.m; sourceTree = "<group>"; };
+		BD2AA4DD5E51E365AE1D224B05FEFF1E /* Whiteboard-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Whiteboard-prefix.pch"; sourceTree = "<group>"; };
+		BEDF56074DBCCC578464D8C84353B440 /* FastProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FastProxy.m; path = Fastboard/Classes/Proxy/FastProxy.m; sourceTree = "<group>"; };
+		BEE5B386356F0324AAE17ED2869E47D7 /* WhiteWebViewInjection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteWebViewInjection.m; path = Whiteboard/Classes/Displayer/WhiteWebViewInjection.m; sourceTree = "<group>"; };
+		BF07350E583AF349A194294437B0C06E /* Whiteboard */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Whiteboard; path = Whiteboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF4E7002B3582A5C43B7F2B518F5990D /* FastPanelControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FastPanelControl.swift; path = Fastboard/Classes/Public/View/FastPanelControl.swift; sourceTree = "<group>"; };
+		C13600E933DFBB80ADA3E926FE04922F /* WhiteConsts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteConsts.h; path = Whiteboard/Classes/Object/WhiteConsts.h; sourceTree = "<group>"; };
+		C18205C1308B22F0B4D33B273C98A842 /* Whiteboard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Whiteboard-umbrella.h"; sourceTree = "<group>"; };
+		C2F6C8993555AF3FABABA13360A6AA58 /* WhiteScene.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteScene.h; path = Whiteboard/Classes/Object/WhiteScene.h; sourceTree = "<group>"; };
+		C37ADA6C22B94D9CE5D771DC6884006C /* Whiteboard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Whiteboard.h; path = Whiteboard/Classes/Whiteboard.h; sourceTree = "<group>"; };
+		C60DE327F7BCA24D65240CA5C9A8D3CA /* YYModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-prefix.pch"; sourceTree = "<group>"; };
+		C6AD00A6B22F51CDD6A50B89E454085C /* WhiteSdkConfiguration+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WhiteSdkConfiguration+Private.h"; path = "Whiteboard/Classes/SDK/WhiteSdkConfiguration+Private.h"; sourceTree = "<group>"; };
+		CA5B74CF34100576687C56CACB1746A6 /* FastError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FastError.swift; path = Fastboard/Classes/Public/FastError.swift; sourceTree = "<group>"; };
+		CA5F13506A1F7BABDE501E3BAD8B81FF /* WhiteCameraConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteCameraConfig.h; path = Whiteboard/Classes/Object/WhiteCameraConfig.h; sourceTree = "<group>"; };
+		CCC1AC9E6943834AC888D1EA0460C522 /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; name = index.html; path = Whiteboard/Resource/index.html; sourceTree = "<group>"; };
+		CD48CCDBCFCAE585E5551EC7CF93A5BF /* WhiteAudioMixerBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteAudioMixerBridge.m; path = Whiteboard/Classes/Displayer/WhiteAudioMixerBridge.m; sourceTree = "<group>"; };
+		D04986F54288F92C17F0EEDEBC518323 /* vendor.c49dfe75.js */ = {isa = PBXFileReference; includeInIndex = 1; name = vendor.c49dfe75.js; path = Whiteboard/Resource/vendor.c49dfe75.js; sourceTree = "<group>"; };
+		D2056F35FB9F00C3FB284179E6F73422 /* FastboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FastboardManager.swift; path = Fastboard/Classes/Public/FastboardManager.swift; sourceTree = "<group>"; };
+		D309F9767962213375C80BB414947DE5 /* dsBridge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = dsBridge.release.xcconfig; sourceTree = "<group>"; };
+		D31B9708ABF0A2A4933A407E0A6BBB31 /* Theme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Theme.swift; path = Fastboard/Classes/Public/Theme/Theme.swift; sourceTree = "<group>"; };
+		D3C86760355ADD372E615FEE805EA0CC /* FastProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FastProxy.h; path = Fastboard/Classes/Proxy/FastProxy.h; sourceTree = "<group>"; };
+		D40972ED325448C67B4A9C9A03BB469F /* WhitePlayerConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhitePlayerConfig.h; path = Whiteboard/Classes/Replayer/WhitePlayerConfig.h; sourceTree = "<group>"; };
+		D43EE7CA4F781787136814563F89F3B5 /* ResourceBundle-Whiteboard-Whiteboard-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Whiteboard-Whiteboard-Info.plist"; sourceTree = "<group>"; };
+		D450D5173ECB1CE3AC150E77C81D2BAB /* WhiteCameraState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteCameraState.m; path = Whiteboard/Classes/Object/WhiteCameraState.m; sourceTree = "<group>"; };
+		D4A03DC271163891B5E7A5CAF4D1D5EC /* WhiteSliderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteSliderView.m; path = Whiteboard/Classes/NativeReplayer/WhiteSliderView.m; sourceTree = "<group>"; };
+		D578F34073AEDEF0BB269E65178E4984 /* WhiteEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteEvent.m; path = Whiteboard/Classes/Object/WhiteEvent.m; sourceTree = "<group>"; };
+		D5EE5803ECD94ED1E5D27323587B283F /* YYModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YYModel.modulemap; sourceTree = "<group>"; };
+		D700DCB92BB77D6644B968CD447A0DD0 /* WhiteWebViewInjection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteWebViewInjection.h; path = Whiteboard/Classes/Displayer/WhiteWebViewInjection.h; sourceTree = "<group>"; };
+		D74BA959B2621A7DBCDD8DF41F21AFB5 /* WhiteCameraBound.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteCameraBound.m; path = Whiteboard/Classes/Object/WhiteCameraBound.m; sourceTree = "<group>"; };
+		D85DFEFAF5CABF2F7BA7ACD818605621 /* DWKWebView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWKWebView.h; path = dsbridge/DWKWebView.h; sourceTree = "<group>"; };
+		D8984A1C5C1E5CCFB41E3434A8A0C4C7 /* WhiteMemberInformation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteMemberInformation.m; path = Whiteboard/Classes/Object/WhiteMemberInformation.m; sourceTree = "<group>"; };
+		D932ADDF48D8CD7C0A57216E5F389B07 /* WhiteCommonCallbacks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteCommonCallbacks.m; path = Whiteboard/Classes/Displayer/WhiteCommonCallbacks.m; sourceTree = "<group>"; };
+		D97A84912E2684AA4858A64159124D6E /* FastConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FastConfiguration.swift; path = Fastboard/Classes/Public/FastConfiguration.swift; sourceTree = "<group>"; };
+		DBEFD2A46E424F0205EB9E929EC070B8 /* WhiteSDK+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WhiteSDK+Private.h"; path = "Whiteboard/Classes/SDK/WhiteSDK+Private.h"; sourceTree = "<group>"; };
+		E42A6CF86A07F64A322522BFC26DC95D /* WhiteAppParam.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteAppParam.m; path = Whiteboard/Classes/Object/WhiteAppParam.m; sourceTree = "<group>"; };
+		E460D5B0416D36F66EE8EC89E5D2FA0A /* YYModel */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YYModel; path = YYModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5A40F894731ED87813A5DFCA6106ADD /* WhiteDisplayerState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteDisplayerState.h; path = Whiteboard/Classes/Displayer/WhiteDisplayerState.h; sourceTree = "<group>"; };
+		E6478E011CBEEEAAEF874C0BBECDB0B4 /* WhiteSdkConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteSdkConfiguration.h; path = Whiteboard/Classes/SDK/WhiteSdkConfiguration.h; sourceTree = "<group>"; };
+		E8C409B357CA39DDB13994A3650F3619 /* YYClassInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYClassInfo.h; path = YYModel/YYClassInfo.h; sourceTree = "<group>"; };
+		E90B3C9C72093A51093735B8AE51C147 /* WhitePanEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhitePanEvent.h; path = Whiteboard/Classes/Object/WhitePanEvent.h; sourceTree = "<group>"; };
+		ECD4D3B0D611ADF1C5B61AB0D471418F /* YYModel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-umbrella.h"; sourceTree = "<group>"; };
+		ED0ACA32AD57447BCFF63E277B02FA59 /* DefaultTheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultTheme.swift; path = Fastboard/Classes/Public/Theme/DefaultTheme.swift; sourceTree = "<group>"; };
+		ED2D5D23E3EE0706F5FA3E50FF9C89F8 /* WhiteConversionInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteConversionInfo.m; path = Whiteboard/Classes/Converter/WhiteConversionInfo.m; sourceTree = "<group>"; };
+		EF048904DAA1011CF054749C2BCAE988 /* main.1413e9a0.css */ = {isa = PBXFileReference; includeInIndex = 1; name = main.1413e9a0.css; path = Whiteboard/Resource/main.1413e9a0.css; sourceTree = "<group>"; };
+		EF9DD8CE8791120E0EF2D69CAD80FF4F /* WhitePlayerState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhitePlayerState.m; path = Whiteboard/Classes/Replayer/WhitePlayerState.m; sourceTree = "<group>"; };
+		EFFFE0D518180998E79F6473779D424E /* UIImage+Bundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Bundle.swift"; path = "Fastboard/Classes/Extension/UIImage+Bundle.swift"; sourceTree = "<group>"; };
+		F2BDFAF7F19ACAF234F6C353FC5DD5CA /* WhiteCameraConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteCameraConfig.m; path = Whiteboard/Classes/Object/WhiteCameraConfig.m; sourceTree = "<group>"; };
+		F3FEE1788A097D2833FC664EDA7F5838 /* WhiteGlobalState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteGlobalState.m; path = Whiteboard/Classes/Displayer/WhiteGlobalState.m; sourceTree = "<group>"; };
+		F4C081140D51844C5D99B246F84B5A7F /* WhiteGlobalState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhiteGlobalState.h; path = Whiteboard/Classes/Displayer/WhiteGlobalState.h; sourceTree = "<group>"; };
+		F93DB95A6C32DA31668145D91D5B911A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		FD37272D70B057F14FB9FB33FDF6EF09 /* FastOperationItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FastOperationItem.swift; path = Fastboard/Classes/Public/View/Panel/Operation/FastOperationItem.swift; sourceTree = "<group>"; };
+		FD9AF7951D3DED0DEAB95FCDD22520AC /* 3861930 */ = {isa = PBXFileReference; includeInIndex = 1; name = 3861930; path = Whiteboard/Resource/3861930; sourceTree = "<group>"; };
+		FDFB92679E298764E7325F8A13186601 /* WhiteDisplayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhiteDisplayer.m; path = Whiteboard/Classes/Displayer/WhiteDisplayer.m; sourceTree = "<group>"; };
+		FF661E7D2039D5A48C8AF8A50B8AED1E /* DSCallInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSCallInfo.h; path = dsbridge/DSCallInfo.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22BD92C0FED1415583B44ED8D03E3732 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		334EE84C64A985D5AF4D5F17166341F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57744903742E90C4EBABD6BCC31C3DED /* Foundation.framework in Frameworks */,
+				189AB87E46F8994DA166D1CDA6898A6B /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		462A8D4D62A453A8FB0AFB36A1B88D12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5A9AD783C2F0265F00EFB7A92455B4C /* AVFoundation.framework in Frameworks */,
+				BA5DC81AC375C35E3A9CC7923F1BEA25 /* Foundation.framework in Frameworks */,
+				EFAE0C8F75B7FA8586D47C37B0E77CDB /* UIKit.framework in Frameworks */,
+				9D462C714254D5E2E5E0F6C354771909 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E010556B976B5DF30F8C2D118AE94DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD9B603E3A959CC2F5380D2B07A8B59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AAFADC11C23807E95A5705D70AB9255 /* CoreFoundation.framework in Frameworks */,
+				80AED0675C95EF37FB5ABFFBA0FE90AB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C652D557CD6EAB389799C005504522D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20614857E84A19162DA4750CF135890B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E42FBF45EE1D911308E8910237A201CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E04E0A33CC20EEE7FC84DA0C6B264CA /* Foundation.framework in Frameworks */,
+				1D56493C62E1D823348D114C75B2889F /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0287E50A053AD437A324E2D7C9BDFB95 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FD9AF7951D3DED0DEAB95FCDD22520AC /* 3861930 */,
+				CCC1AC9E6943834AC888D1EA0460C522 /* index.html */,
+				EF048904DAA1011CF054749C2BCAE988 /* main.1413e9a0.css */,
+				6301F5E332B4A1F7302BCF9DAAB78FE3 /* main.f1d5e41e.js */,
+				7AAE3619C5D94BC14A75A723B2694F11 /* runtime.36e3f0da.js */,
+				8972E11001B297AEC3940F8D4C1DB383 /* vendor.5611aab0.css */,
+				D04986F54288F92C17F0EEDEBC518323 /* vendor.c49dfe75.js */,
+				20B9A94FDB2626EEA54158FD7E6C3704 /* web-sdk.b9b319d7.js */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		14ACDFE2D6A7893E01658E55C1769441 /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				8E03516A850D8DC0F628492D0546D16D /* NSObject+YYModel.h */,
+				783BB5E1DD6CAFDD96466237DBA3B5E9 /* NSObject+YYModel.m */,
+				E8C409B357CA39DDB13994A3650F3619 /* YYClassInfo.h */,
+				B38A24B5426474FCB717E1E8781EF322 /* YYClassInfo.m */,
+				1D0DCA552B4BD3039BC415A0AB6F6326 /* YYModel.h */,
+				3087C831E351BACDC61FF91C6EFF28FB /* Support Files */,
+			);
+			name = YYModel;
+			path = YYModel;
+			sourceTree = "<group>";
+		};
+		240E0D88EE9A1E367F6B2F940524139F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				797D46A7F1534583458B98BF2BB479A7 /* dsBridge */,
+				6AF279AB629184C658EFA156D552216E /* Fastboard */,
+				92842DC65A4EE2E5A0E11A62B49986FA /* Fastboard-Icons */,
+				9217F072F183ADE7E1CEB6438CDD5789 /* Pods-ExampleFastboard */,
+				BF07350E583AF349A194294437B0C06E /* Whiteboard */,
+				B43929320E40A048DEF21A95905050F2 /* Whiteboard-Whiteboard */,
+				E460D5B0416D36F66EE8EC89E5D2FA0A /* YYModel */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D84187BF243A9873409AEC59169D0BF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0F78F729959C350C47985B2E93F8E9A4 /* AVFoundation.framework */,
+				2338967813D2B6011268E4CADBECB798 /* CoreFoundation.framework */,
+				0F63FD32AB75EDD088C61982E5C9F289 /* Foundation.framework */,
+				03504BC490B33B26405B98309F94474E /* UIKit.framework */,
+				F93DB95A6C32DA31668145D91D5B911A /* WebKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3087C831E351BACDC61FF91C6EFF28FB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5EE5803ECD94ED1E5D27323587B283F /* YYModel.modulemap */,
+				9569852661A3D1301351B9940E4A890D /* YYModel-dummy.m */,
+				06D6596827493A94E1C0D262A3D42783 /* YYModel-Info.plist */,
+				C60DE327F7BCA24D65240CA5C9A8D3CA /* YYModel-prefix.pch */,
+				ECD4D3B0D611ADF1C5B61AB0D471418F /* YYModel-umbrella.h */,
+				9200559293C82CB0DE3F9710552527D1 /* YYModel.debug.xcconfig */,
+				148C00EF8648485BCB838C4B0121CFE8 /* YYModel.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YYModel";
+			sourceTree = "<group>";
+		};
+		354E9C740A320A59925D3D0838055FF4 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				2B4229F49535A6B6C77D204D5933F94F /* WhiteAppParam.h */,
+				E42A6CF86A07F64A322522BFC26DC95D /* WhiteAppParam.m */,
+				A1ECDF0116D26F81C10D9F08B3D95016 /* WhiteCameraBound.h */,
+				D74BA959B2621A7DBCDD8DF41F21AFB5 /* WhiteCameraBound.m */,
+				CA5F13506A1F7BABDE501E3BAD8B81FF /* WhiteCameraConfig.h */,
+				F2BDFAF7F19ACAF234F6C353FC5DD5CA /* WhiteCameraConfig.m */,
+				54E141F13C62C38ABB01A7BBA87D9D12 /* WhiteCameraState.h */,
+				D450D5173ECB1CE3AC150E77C81D2BAB /* WhiteCameraState.m */,
+				C13600E933DFBB80ADA3E926FE04922F /* WhiteConsts.h */,
+				329A449842508FE84AD68768C6F7B183 /* WhiteConsts.m */,
+				6EC39F577E3EED35A52145970AD9EE2D /* WhiteEvent.h */,
+				D578F34073AEDEF0BB269E65178E4984 /* WhiteEvent.m */,
+				B4EB586AEB5E896B541666EA0D5B1EFD /* WhiteFontFace.h */,
+				9BDE7D8D131A9514964F8B9CDF262E5B /* WhiteFontFace.m */,
+				A4F11B9F227B8A9F2B8D7E23561F6720 /* WhiteMemberInformation.h */,
+				D8984A1C5C1E5CCFB41E3434A8A0C4C7 /* WhiteMemberInformation.m */,
+				81A5543476B23B3C6AA2808541F6E22D /* WhiteMemberState.h */,
+				26AA374C3DC32A509662950D37302081 /* WhiteMemberState.m */,
+				E90B3C9C72093A51093735B8AE51C147 /* WhitePanEvent.h */,
+				1E196233F7B249F0469871A08B494098 /* WhitePanEvent.m */,
+				0970D9657B85F0178A4556804DF07031 /* WhitePptPage.h */,
+				49D94F708E3CF1547BF6EC762624E08B /* WhitePptPage.m */,
+				19E7BB9F1C61F5EDBAC16268FE0E6F58 /* WhiteRectangleConfig.h */,
+				328B9B35108E41462E6806057D807D33 /* WhiteRectangleConfig.m */,
+				814EC143DB7AB7916CF0EF0C973E22AD /* WhiteRoomMember.h */,
+				930150DFD4092496D9C57D2DDCA11655 /* WhiteRoomMember.m */,
+				C2F6C8993555AF3FABABA13360A6AA58 /* WhiteScene.h */,
+				833C9E2F470D74CCCA3428E95FB2E96A /* WhiteScene.m */,
+				9BC2E257E673103EED87637A6DDEBD05 /* WhiteSceneState.h */,
+				5BBF585ACF9572B227597444CBF28867 /* WhiteSceneState.m */,
+			);
+			name = Object;
+			sourceTree = "<group>";
+		};
+		3BEEC14D84548D3FD5048F38CF0BA376 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B10A29333BBBAFBEBA0078D8707B1B4 /* dsBridge.modulemap */,
+				9C2AFC206A5893249C1CFBFC3F3F1BAF /* dsBridge-dummy.m */,
+				3C7A5C3D7FD1E92F43269ABB9DBDC904 /* dsBridge-Info.plist */,
+				36D679DA127B7F31C40E98C0C56ACE7D /* dsBridge-prefix.pch */,
+				880B1DD6F43F2EA8994941703AF8129C /* dsBridge-umbrella.h */,
+				90663C4638F994A74C36DF56B43D3A15 /* dsBridge.debug.xcconfig */,
+				D309F9767962213375C80BB414947DE5 /* dsBridge.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/dsBridge";
+			sourceTree = "<group>";
+		};
+		44C311AED92A835271B589F83CFF6150 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6A5FAAF533368DAC0734089BA089B46 /* Pods-ExampleFastboard */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4CEE378806B890EAAFD07ED3D6A81C1A /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				34000DCA065799D1030D85139836B231 /* WhiteBroadcastState.h */,
+				2F41F6ADDC4F6C12F5C364CA86E40142 /* WhiteBroadcastState.m */,
+				3A8F6DD664C3A06A69D85C4B49A03CB8 /* WhiteImageInformation.h */,
+				7A53F616413A6413602123C287A3D24F /* WhiteImageInformation.m */,
+				40DDF7DE85D78B58E24C48CF3C8A2E33 /* WhiteRoom.h */,
+				4E9111924D8A8EDDE939FC6A567620F3 /* WhiteRoom.m */,
+				21EDCB988FC865D9238B41248D929BB5 /* WhiteRoom+Private.h */,
+				8B11B41FC0A274E444B2172261A7F85A /* WhiteRoomCallbacks.h */,
+				A8543D16C95F2FCE2DD5E0C715FE66EC /* WhiteRoomCallbacks.m */,
+				6CDF5F4CDA1C8BA8726AFD47F3D1CCFB /* WhiteRoomCallbacks+Private.h */,
+				67E09F71F6FF8128D33AD7B67AD1E4C8 /* WhiteRoomConfig.h */,
+				80D4B4B676AB13F1C41E634A1991D398 /* WhiteRoomConfig.m */,
+				8C1A92A8D79704CB4591DF91AD80DBC9 /* WhiteRoomState.h */,
+				BBE187B93098193E79F856527170EF83 /* WhiteRoomState.m */,
+				AEBCE0D8DDB86F40B60905588F9443AC /* WhiteSDK+Room.h */,
+				54EB8D80BD32C1BC12231077E6924236 /* WhiteSDK+Room.m */,
+			);
+			name = Room;
+			sourceTree = "<group>";
+		};
+		564CD9DC18C34F9103F9413D2F68A962 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9C70DC4939B92EDB419C1917EF3BF74C /* WhiteObject.h */,
+				003FB2544F4C085153E28F78EBA478A2 /* WhiteObject.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6C557745DBFB44054B097A933E79ED03 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				19375E05592C26A1A78A6FBDCA56188D /* Fastboard.modulemap */,
+				0B5388C76928AA04868A9CCD2054F7C1 /* Fastboard-dummy.m */,
+				33EB2F11EE7FE3CC3C1DBE44AC311454 /* Fastboard-Info.plist */,
+				7BF8E0C549991D8E06C71E366D0ED1E1 /* Fastboard-prefix.pch */,
+				56E0927BD8551DFA39A3E6B3C50EA411 /* Fastboard-umbrella.h */,
+				545E6FA1FD3CD5A6E583BA2ADAD61EE2 /* Fastboard.debug.xcconfig */,
+				5798D661D3234FF76CA03506CF14FF11 /* Fastboard.release.xcconfig */,
+				167AC81DF09C4F5BCF501C50009523CC /* ResourceBundle-Icons-Fastboard-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Fastboard";
+			sourceTree = "<group>";
+		};
+		771F1F3C494D9984EB423E982DA5D162 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				44B63830650257C16E9D86C6ACA5B839 /* WhiteAudioMixerBridge.h */,
+				CD48CCDBCFCAE585E5551EC7CF93A5BF /* WhiteAudioMixerBridge.m */,
+				8D016DAA6DB5E795DACA706C4029816A /* WhiteBoardView.h */,
+				401C360D39B6A9069FD8843CBE059C30 /* WhiteBoardView.m */,
+				56117D3D9CE17DA68B5329244E6FADBD /* WhiteBoardView+Private.h */,
+				8BE522B141CCBF0FA0C84D52AA2947C7 /* WhiteCommonCallbacks.h */,
+				D932ADDF48D8CD7C0A57216E5F389B07 /* WhiteCommonCallbacks.m */,
+				B20A212A8F680E519D07DC92C26A4BC3 /* WhiteDisplayer.h */,
+				FDFB92679E298764E7325F8A13186601 /* WhiteDisplayer.m */,
+				4DA94038B98592F79EE9064C3BC77219 /* WhiteDisplayer+Private.h */,
+				E5A40F894731ED87813A5DFCA6106ADD /* WhiteDisplayerState.h */,
+				B39B03FEA6533E8EBDFB1CB1759409D2 /* WhiteDisplayerState.m */,
+				F4C081140D51844C5D99B246F84B5A7F /* WhiteGlobalState.h */,
+				F3FEE1788A097D2833FC664EDA7F5838 /* WhiteGlobalState.m */,
+				93B223BA84B4BF2A9018D494C8729058 /* WhiteSDK.h */,
+				5AA031671FC29AC64C72E1440A500AE5 /* WhiteSDK.m */,
+				DBEFD2A46E424F0205EB9E929EC070B8 /* WhiteSDK+Private.h */,
+				E6478E011CBEEEAAEF874C0BBECDB0B4 /* WhiteSdkConfiguration.h */,
+				362EA6D7129DBA06F89004AA62DE9430 /* WhiteSdkConfiguration.m */,
+				C6AD00A6B22F51CDD6A50B89E454085C /* WhiteSdkConfiguration+Private.h */,
+				D700DCB92BB77D6644B968CD447A0DD0 /* WhiteWebViewInjection.h */,
+				BEE5B386356F0324AAE17ED2869E47D7 /* WhiteWebViewInjection.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		85BCB9B2E6029B1F49C3E0FAEC28378C /* Whiteboard */ = {
+			isa = PBXGroup;
+			children = (
+				C37ADA6C22B94D9CE5D771DC6884006C /* Whiteboard.h */,
+				771F1F3C494D9984EB423E982DA5D162 /* Base */,
+				94CEE2D22B018120CB4BD9E9DFB9A9D5 /* Converter */,
+				564CD9DC18C34F9103F9413D2F68A962 /* Model */,
+				C95286920389A99F24102C35EBFC588F /* NativeReplayer */,
+				354E9C740A320A59925D3D0838055FF4 /* Object */,
+				D0A6BCAAD509233D9E072E358E94E542 /* Replayer */,
+				0287E50A053AD437A324E2D7C9BDFB95 /* Resources */,
+				4CEE378806B890EAAFD07ED3D6A81C1A /* Room */,
+				AB554E8EAA673022479F0B4736B13652 /* Support Files */,
+			);
+			name = Whiteboard;
+			path = Whiteboard;
+			sourceTree = "<group>";
+		};
+		94CEE2D22B018120CB4BD9E9DFB9A9D5 /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				70C068571A7A3B8B9CBB7F7B20E4D38E /* WhiteConversionInfo.h */,
+				ED2D5D23E3EE0706F5FA3E50FF9C89F8 /* WhiteConversionInfo.m */,
+				28F8C0D663A16A446F1376F020EAF388 /* WhiteConverter.h */,
+				324DED6ABD48A30BF4BF9789E0A14E3C /* WhiteConverter.m */,
+			);
+			name = Converter;
+			sourceTree = "<group>";
+		};
+		AB554E8EAA673022479F0B4736B13652 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D43EE7CA4F781787136814563F89F3B5 /* ResourceBundle-Whiteboard-Whiteboard-Info.plist */,
+				BAD546D2FC078769EC719DF78E82CB8D /* Whiteboard.modulemap */,
+				0AE6AEA09664A54F0E54D945247887D9 /* Whiteboard-dummy.m */,
+				B0796CC3DC43FC46C7DC8985538E02C0 /* Whiteboard-Info.plist */,
+				BD2AA4DD5E51E365AE1D224B05FEFF1E /* Whiteboard-prefix.pch */,
+				C18205C1308B22F0B4D33B273C98A842 /* Whiteboard-umbrella.h */,
+				48E38291C57ABE5C21B488A22E8D59C1 /* Whiteboard.debug.xcconfig */,
+				32BB212DF09F9C0F5A223375D7AEB70C /* Whiteboard.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Whiteboard";
+			sourceTree = "<group>";
+		};
+		B6A5FAAF533368DAC0734089BA089B46 /* Pods-ExampleFastboard */ = {
+			isa = PBXGroup;
+			children = (
+				8C33514DC11B9FBC44E95116A538305C /* Pods-ExampleFastboard.modulemap */,
+				7803ACFA2724D5B521F30CF616ACDFB4 /* Pods-ExampleFastboard-acknowledgements.markdown */,
+				31A542D341FB8D59D63D79B414F541F6 /* Pods-ExampleFastboard-acknowledgements.plist */,
+				18BB9AE98598D0DF7654547A7E3D8BB8 /* Pods-ExampleFastboard-dummy.m */,
+				83DA12D47565C2719EBDBA345BA9098C /* Pods-ExampleFastboard-frameworks.sh */,
+				9C5071C47D29002F66D07668F736E8B1 /* Pods-ExampleFastboard-Info.plist */,
+				A2E7E5938CD474CFEBD911CD6D506D26 /* Pods-ExampleFastboard-umbrella.h */,
+				902DE4ADF76FAD75E945CC536F66BA0D /* Pods-ExampleFastboard.debug.xcconfig */,
+				86DC84643539A9EFA9582E6B0D6A0195 /* Pods-ExampleFastboard.release.xcconfig */,
+			);
+			name = "Pods-ExampleFastboard";
+			path = "Target Support Files/Pods-ExampleFastboard";
+			sourceTree = "<group>";
+		};
+		B94D7768568A9992200DB461E8CF687F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D84187BF243A9873409AEC59169D0BF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0E5AD42726C64081DE06696FB181868 /* dsBridge */ = {
+			isa = PBXGroup;
+			children = (
+				BAB949EFBF77B3321E6F53CE3C39229B /* dsbridge.h */,
+				FF661E7D2039D5A48C8AF8A50B8AED1E /* DSCallInfo.h */,
+				5B864B6F2D632F7DF01AF379F4D10317 /* DSCallInfo.m */,
+				D85DFEFAF5CABF2F7BA7ACD818605621 /* DWKWebView.h */,
+				A9F0D5F5572182D3543500BC50F013D6 /* DWKWebView.m */,
+				0B72113F4395013DCCD76B025A617EB9 /* InternalApis.h */,
+				8184D1F1AAEF218BC926207AE3098DF9 /* InternalApis.m */,
+				9A0D479FCF66A80EA39AF841A2B9ECD4 /* JSBUtil.h */,
+				66AAAB11C699A6CBBDE8E8EA8E3B6D4A /* JSBUtil.m */,
+				3BEEC14D84548D3FD5048F38CF0BA376 /* Support Files */,
+			);
+			name = dsBridge;
+			path = dsBridge;
+			sourceTree = "<group>";
+		};
+		C95286920389A99F24102C35EBFC588F /* NativeReplayer */ = {
+			isa = PBXGroup;
+			children = (
+				2A533F32CCD675D41DE356029642E787 /* WhiteCombinePlayer.h */,
+				73DB5B0764CFBEEF1795B2D06E16290C /* WhiteCombinePlayer.m */,
+				67E066779799030B7E8339A00626A821 /* WhiteSliderView.h */,
+				D4A03DC271163891B5E7A5CAF4D1D5EC /* WhiteSliderView.m */,
+				012DF6090A5C10C3FB163C751E999C03 /* WhiteVideoView.h */,
+				AB41913BDF4C0C30FD621521954AE0E2 /* WhiteVideoView.m */,
+			);
+			name = NativeReplayer;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				B94D7768568A9992200DB461E8CF687F /* Frameworks */,
+				DA1E9DAF9C00E3E73F0C92D7CBCBE911 /* Pods */,
+				240E0D88EE9A1E367F6B2F940524139F /* Products */,
+				44C311AED92A835271B589F83CFF6150 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D0983F660536AB893ACC46A0CFDAA21B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				972A1D2E8C2B89BB8266B22579015DAF /* Icons.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D0A6BCAAD509233D9E072E358E94E542 /* Replayer */ = {
+			isa = PBXGroup;
+			children = (
+				877742624EA730EF01344F77899BBCA9 /* WhitePlayer.h */,
+				0EFAA4059D8A546FCEEB1CB9FF1EF17B /* WhitePlayer.m */,
+				9F3EB8DC508BAF1493170C732922840A /* WhitePlayer+Private.h */,
+				D40972ED325448C67B4A9C9A03BB469F /* WhitePlayerConfig.h */,
+				AF73F1BC1E480290A84C55D11ABBBBD6 /* WhitePlayerConfig.m */,
+				4CC9F1648CB76297821DDEAB5A04155E /* WhitePlayerConsts.h */,
+				41EE12E8D4DCEC51F5ED31DDCF6632AF /* WhitePlayerEvent.h */,
+				51050B42D5D6BA9EEE2FAFEF69311394 /* WhitePlayerEvent.m */,
+				06217D7FCFB0C46B04C76F6D7C40C5B5 /* WhitePlayerEvent+Private.h */,
+				8E72994B6767D58119DC136A4F4078D9 /* WhitePlayerState.h */,
+				EF9DD8CE8791120E0EF2D69CAD80FF4F /* WhitePlayerState.m */,
+				0C184F76833680DC2A6B15EB9D6D16EA /* WhitePlayerTimeInfo.h */,
+				0A75F23DBF36432FA9B550DB8ADA1675 /* WhitePlayerTimeInfo.m */,
+				472950EAF5FE52612A47F2EA852D79A5 /* WhiteSDK+Replayer.h */,
+				13C4A2F66579BCB862FFF80D19A1BCDD /* WhiteSDK+Replayer.m */,
+			);
+			name = Replayer;
+			sourceTree = "<group>";
+		};
+		D47D4A116120434157C0BF141A71D849 /* Fastboard */ = {
+			isa = PBXGroup;
+			children = (
+				11AB6E1ECA42C0F10C5FED435A9E5D83 /* Appearancemanager.swift */,
+				84F17837BBDA266F87EF1EBF9D3DDDE6 /* ApplianceButton.swift */,
+				640FE42BD3D6026F63E07065010B953C /* CompactFastboardOverlay.swift */,
+				32B54EEAA9AB575D9669E144A5C6DD38 /* ControlBar.swift */,
+				1317BBA43D036CC2E13B36806D445199 /* DefaultOperationItem.swift */,
+				7066D7D37E347932E07719244E00465B /* DefaultOperationType.swift */,
+				ED0ACA32AD57447BCFF63E277B02FA59 /* DefaultTheme.swift */,
+				17C9437C003F39A1E2F65AE2AF62B428 /* DelegateProxy.swift */,
+				32527D7BD0EC23C05DD4A151A391D7B3 /* Fastboard.swift */,
+				07B55AC4C108426340943C0B22A92730 /* Fastboard+FastPanelControl.swift */,
+				22AAF896E446D0AD6E1F8FFC893E7AD7 /* FastboardDelegate.swift */,
+				D2056F35FB9F00C3FB284179E6F73422 /* FastboardManager.swift */,
+				249C5145B0DF15C21965D8D6F63D823C /* FastboardOverlay.swift */,
+				74F3D07A779311FD31CE462B91876D26 /* FastboardView.swift */,
+				D97A84912E2684AA4858A64159124D6E /* FastConfiguration.swift */,
+				CA5B74CF34100576687C56CACB1746A6 /* FastError.swift */,
+				82D696F5F573FA9D8AC7A97B6CA05ECF /* FastOperation+NeedColor.swift */,
+				184510171D15F68D81F9331594DB7703 /* FastOperation+NeedDelete.swift */,
+				FD37272D70B057F14FB9FB33FDF6EF09 /* FastOperationItem.swift */,
+				3D88166B5DFFEE53BBA15BE9DAE6588D /* FastPanel.swift */,
+				BF4E7002B3582A5C43B7F2B518F5990D /* FastPanelControl.swift */,
+				59F73332845B641C2EBF52C7AAF36BA0 /* FastPanelDelegate.swift */,
+				D3C86760355ADD372E615FEE805EA0CC /* FastProxy.h */,
+				BEDF56074DBCCC578464D8C84353B440 /* FastProxy.m */,
+				53CBD3B3AD9E0373C84B47F2F7575DE5 /* FastRoomPhase.swift */,
+				0BDDA64C1BBA221D83A25ED8B2361840 /* IndicatorMoreButton.swift */,
+				00C67362301874182513559765E2E646 /* Load.m */,
+				4AFB293023AFCC13A1891A645DB499DE /* Region.swift */,
+				62577B811D365179AFC4A44C444766BB /* RegularFastboardOverlay.swift */,
+				194EDCF867FA1FA7AC10B087C9C966E2 /* SubPanelView.swift */,
+				D31B9708ABF0A2A4933A407E0A6BBB31 /* Theme.swift */,
+				1CCAE0F768653B6CA6191DF6EFBFB9EE /* ThemeManager.swift */,
+				6D6A5AE1365BE050181FF5B010D7DCFB /* TraitCollection+Extension.swift */,
+				1502256B05F75B643EA53FF68919BCAC /* TraitUpdateHandler.swift */,
+				2837FA435B7FDDF9817D5BAAEC09289A /* UIColor+Convince.swift */,
+				06FC1FF43C8179C2DCAEDD5604C21789 /* UIColor+NSNumber.swift */,
+				EFFFE0D518180998E79F6473779D424E /* UIImage+Bundle.swift */,
+				921027537C058490717766B2AB8BA50F /* UIImage+ColorItem.swift */,
+				63A3AF4F3A3E326870777AB23AA570DE /* UIImage+tint.swift */,
+				AD81013D6F7585AABD03BE4CE711D6C2 /* UIView+Theme.swift */,
+				5E1211382444D94BEC428004D6634FD2 /* WhiteBoardView+Theme.swift */,
+				D0983F660536AB893ACC46A0CFDAA21B /* Resources */,
+				6C557745DBFB44054B097A933E79ED03 /* Support Files */,
+			);
+			name = Fastboard;
+			path = Fastboard;
+			sourceTree = "<group>";
+		};
+		DA1E9DAF9C00E3E73F0C92D7CBCBE911 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0E5AD42726C64081DE06696FB181868 /* dsBridge */,
+				D47D4A116120434157C0BF141A71D849 /* Fastboard */,
+				85BCB9B2E6029B1F49C3E0FAEC28378C /* Whiteboard */,
+				14ACDFE2D6A7893E01658E55C1769441 /* YYModel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		294D8AF7CEB02F49E6792665E74A527E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B99C4E213A4511D9B56A11C5FD35DA03 /* Pods-ExampleFastboard-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37A1E3C32E68094C8C6B04F40DD4DDCD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C7AF9EC34864605747A9D2976D3ACAE /* dsbridge.h in Headers */,
+				CC176A1E70CC51C46DC3772C7314545D /* dsBridge-umbrella.h in Headers */,
+				5EB72584BB4A16B0915A0E31528223CD /* DSCallInfo.h in Headers */,
+				398B9B9CE465EA92321144EA47A39ED1 /* DWKWebView.h in Headers */,
+				C3E07DCB20B0997371672BF9132C1B4F /* InternalApis.h in Headers */,
+				114CA104309B0CBB9F9E8712C3924893 /* JSBUtil.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E6E416F47D14E9AE4CB518CDFEE2FD2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5867B31E01E59C89B96B5A6B81B0ADE /* Fastboard-umbrella.h in Headers */,
+				F54FBC58C9327AEDBF7ADAF455626DDC /* FastProxy.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88C384FD8A9E0377822F3EE2594013AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D1C85330F3F85AF51E763655A5329EE /* WhiteAppParam.h in Headers */,
+				63CC71C09CEDF529D6B52838A69238CE /* WhiteAudioMixerBridge.h in Headers */,
+				42764E969538DDF06A250F76F3A83791 /* Whiteboard.h in Headers */,
+				DA045093D1C79707052B652F2F34B044 /* Whiteboard-umbrella.h in Headers */,
+				ADB315D0C1041747C8E242E2D992CFA2 /* WhiteBoardView.h in Headers */,
+				C9F1482BC27A3EC7C6B0266BE53CD1A9 /* WhiteBoardView+Private.h in Headers */,
+				E28E9A8318849582F4754B45547FF696 /* WhiteBroadcastState.h in Headers */,
+				EC081A421F21B5737E610AE5D466E7CF /* WhiteCameraBound.h in Headers */,
+				96A5B1EEC40A5E2F100A23394115FE81 /* WhiteCameraConfig.h in Headers */,
+				EA6822EBCDB79C9B06C7CB98BCEBC99A /* WhiteCameraState.h in Headers */,
+				079A8895FF01B4FF1B1DB7AE05E36ACC /* WhiteCombinePlayer.h in Headers */,
+				EAF566F374191E59D243156A5A4273C2 /* WhiteCommonCallbacks.h in Headers */,
+				E9CCE4D2B3D117BDFB9DB3772F249423 /* WhiteConsts.h in Headers */,
+				E391AB70FD92770E61CDE716C593A897 /* WhiteConversionInfo.h in Headers */,
+				DEA6FEDC2309DD5C57FCB817F23880BD /* WhiteConverter.h in Headers */,
+				5FE3B907DF99E0A7056F60FF89389AE6 /* WhiteDisplayer.h in Headers */,
+				34A5875510B3894E02FF9BE33D71B271 /* WhiteDisplayer+Private.h in Headers */,
+				869D26C769E748A952D071E1075A2176 /* WhiteDisplayerState.h in Headers */,
+				A90D9F2433623A948783280404F2C72A /* WhiteEvent.h in Headers */,
+				6BAEDAD7908CABFD458282A6022AB5DC /* WhiteFontFace.h in Headers */,
+				FF34436E3B351EA05329C53162D75C39 /* WhiteGlobalState.h in Headers */,
+				11E6F36D99866CEEAC7022B142B43A9A /* WhiteImageInformation.h in Headers */,
+				CC9885694ABA194B7B9920206A2001A8 /* WhiteMemberInformation.h in Headers */,
+				FCF6AB05E56AD7909DC1EA18CACE352A /* WhiteMemberState.h in Headers */,
+				7A41263FCBB480F60A6A34FC6ED56DBB /* WhiteObject.h in Headers */,
+				5D78199ECA55E207D65FA5721DB54117 /* WhitePanEvent.h in Headers */,
+				48A36852D3B1A325362BD680605B37E6 /* WhitePlayer.h in Headers */,
+				9191A3AD7A21A7A5C61598C42DDA9154 /* WhitePlayer+Private.h in Headers */,
+				3497CA16EFFC41DBE427FE5745CC057B /* WhitePlayerConfig.h in Headers */,
+				57B1CAB0699145E4DE59D44B7D89A315 /* WhitePlayerConsts.h in Headers */,
+				833A4AE07F5D6255BF8B901E100F34D5 /* WhitePlayerEvent.h in Headers */,
+				D0691E0224CDA989E77CE5A61C07E400 /* WhitePlayerEvent+Private.h in Headers */,
+				BDF4DA0314BF580E1F85CE2D54C49583 /* WhitePlayerState.h in Headers */,
+				4DD04814DB860D289AD9576048676524 /* WhitePlayerTimeInfo.h in Headers */,
+				22F8208AFB8D407375547DB9AFD581AE /* WhitePptPage.h in Headers */,
+				0CABAAB76E58E51656EA6057719CBD28 /* WhiteRectangleConfig.h in Headers */,
+				E7AB999C555E1906B0C9A1A86C82772E /* WhiteRoom.h in Headers */,
+				35E3801A4A40BED7AB778890B1940619 /* WhiteRoom+Private.h in Headers */,
+				405E4CF2588C2EC4A8680B142E7E273E /* WhiteRoomCallbacks.h in Headers */,
+				4C108B0B8F435E318A20C67972DE9533 /* WhiteRoomCallbacks+Private.h in Headers */,
+				F706A81AB70A702087EBFBDE9FA7A405 /* WhiteRoomConfig.h in Headers */,
+				DEA8A96C710D4509F7DDCB82FC8855B8 /* WhiteRoomMember.h in Headers */,
+				2C233150975AE23645F61E1494ADB91D /* WhiteRoomState.h in Headers */,
+				1D7974D8C481F8B235338C756A18B1C3 /* WhiteScene.h in Headers */,
+				692F20C1933F9DFFCF9C527ED2535114 /* WhiteSceneState.h in Headers */,
+				7B0D65136C99B2E44A5D779C2EE7D4BF /* WhiteSDK.h in Headers */,
+				7E39AE7BF1F28AF0526AA35806A09683 /* WhiteSDK+Private.h in Headers */,
+				E67445D9B6E7E359794F3AF4FADFA194 /* WhiteSDK+Replayer.h in Headers */,
+				02BC901BA5AD89EE7E2B8E83E0F864C3 /* WhiteSDK+Room.h in Headers */,
+				D9DB6C17D0AF258B37950CF0863474F8 /* WhiteSdkConfiguration.h in Headers */,
+				61BC2BD5669B239F2F37840112DB275C /* WhiteSdkConfiguration+Private.h in Headers */,
+				17BB0434CB47D01BBF7B20711EA36294 /* WhiteSliderView.h in Headers */,
+				6D3CC7ECF844691F0AC52C124FEE137E /* WhiteVideoView.h in Headers */,
+				98C582FED81EE9DAFC4068F00C89D6D8 /* WhiteWebViewInjection.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91F023679C3712FFE2700F681050CF68 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C935E3ACD1F2D2F60E967A21E81A649D /* NSObject+YYModel.h in Headers */,
+				2996423D8797770BBA689D7E47C42588 /* YYClassInfo.h in Headers */,
+				48DE16F978BF06B168879E3A955A5380 /* YYModel.h in Headers */,
+				8BB627FACB37E51658702382D276A65F /* YYModel-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0EB9E06B4A4636CA9288D815FC9DBFC5 /* Whiteboard-Whiteboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FACF18B2A680793CF89B8E0126396DB /* Build configuration list for PBXNativeTarget "Whiteboard-Whiteboard" */;
+			buildPhases = (
+				BF4F6383A20751D2AE25FDA915D166FF /* Sources */,
+				4E010556B976B5DF30F8C2D118AE94DD /* Frameworks */,
+				3147192396D566BCB8D867A7C963154B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Whiteboard-Whiteboard";
+			productName = Whiteboard;
+			productReference = B43929320E40A048DEF21A95905050F2 /* Whiteboard-Whiteboard */;
+			productType = "com.apple.product-type.bundle";
+		};
+		1A6F633BD0A4B9EF892715BEB76AC948 /* dsBridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 485C5E83B54A3F761ED244445AB7DBF1 /* Build configuration list for PBXNativeTarget "dsBridge" */;
+			buildPhases = (
+				37A1E3C32E68094C8C6B04F40DD4DDCD /* Headers */,
+				8BD5D81D7A8462721ACC45FB35216246 /* Sources */,
+				334EE84C64A985D5AF4D5F17166341F4 /* Frameworks */,
+				83071B4BA413B68AE1022ECBC597C0CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dsBridge;
+			productName = dsBridge;
+			productReference = 797D46A7F1534583458B98BF2BB479A7 /* dsBridge */;
+			productType = "com.apple.product-type.framework";
+		};
+		750579D9E74AA25AB515AD198A40FF8D /* Fastboard-Icons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B676B0C6786220078510A73AF8CA93D /* Build configuration list for PBXNativeTarget "Fastboard-Icons" */;
+			buildPhases = (
+				072882CC456CBD75698816E0B5A42698 /* Sources */,
+				22BD92C0FED1415583B44ED8D03E3732 /* Frameworks */,
+				9853036A91BA1F1E2A4578AAE73AABFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fastboard-Icons";
+			productName = Icons;
+			productReference = 92842DC65A4EE2E5A0E11A62B49986FA /* Fastboard-Icons */;
+			productType = "com.apple.product-type.bundle";
+		};
+		84B44807A12996D487A4A591A481D6A0 /* YYModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD455EB5E70AF2BD2A761E3617FA4914 /* Build configuration list for PBXNativeTarget "YYModel" */;
+			buildPhases = (
+				91F023679C3712FFE2700F681050CF68 /* Headers */,
+				6FF479BB347DDB9CF9F6336717B6322F /* Sources */,
+				8BD9B603E3A959CC2F5380D2B07A8B59 /* Frameworks */,
+				F84FDAA114ADDBF54ED6C59E2AFA0826 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YYModel;
+			productName = YYModel;
+			productReference = E460D5B0416D36F66EE8EC89E5D2FA0A /* YYModel */;
+			productType = "com.apple.product-type.framework";
+		};
+		887E769F555AF76F514A7276E2BA1CB8 /* Whiteboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CBD66C11785489E6CFBCA8900426EB7 /* Build configuration list for PBXNativeTarget "Whiteboard" */;
+			buildPhases = (
+				88C384FD8A9E0377822F3EE2594013AA /* Headers */,
+				031D508102ECC4CCC95A8974506318A2 /* Sources */,
+				462A8D4D62A453A8FB0AFB36A1B88D12 /* Frameworks */,
+				9647C236664A7AD629769533D49717D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C1BFFE06DF8A8DADAA1B137E6B3F562 /* PBXTargetDependency */,
+				FFAF8FD64BEC65225ED5F23C38FEBF60 /* PBXTargetDependency */,
+				5DB07B5270145743D7DBEA19F9561425 /* PBXTargetDependency */,
+			);
+			name = Whiteboard;
+			productName = Whiteboard;
+			productReference = BF07350E583AF349A194294437B0C06E /* Whiteboard */;
+			productType = "com.apple.product-type.framework";
+		};
+		A7F3302A6291E4A04C78DF417924FB4D /* Pods-ExampleFastboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28D89D610716E9795232D1BA48E257F7 /* Build configuration list for PBXNativeTarget "Pods-ExampleFastboard" */;
+			buildPhases = (
+				294D8AF7CEB02F49E6792665E74A527E /* Headers */,
+				0A75FC41DD85B91405835DA4CF7D0F43 /* Sources */,
+				C652D557CD6EAB389799C005504522D8 /* Frameworks */,
+				07E13AB1665176689508502D72E6F9B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				374FF2447BA9B1E07CFDC6794BC19693 /* PBXTargetDependency */,
+				04DB7A80EA25FA9319EDF4F7815F2E77 /* PBXTargetDependency */,
+				A31403BE8B647A12162E67BCE848E664 /* PBXTargetDependency */,
+				6D47DE9072664ED991336B0C8BBD593C /* PBXTargetDependency */,
+			);
+			name = "Pods-ExampleFastboard";
+			productName = Pods_ExampleFastboard;
+			productReference = 9217F072F183ADE7E1CEB6438CDD5789 /* Pods-ExampleFastboard */;
+			productType = "com.apple.product-type.framework";
+		};
+		BE49CDB6FCC514206F1F9C497AE5AB09 /* Fastboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFB2181EC7E68F08838AB53E14DB1337 /* Build configuration list for PBXNativeTarget "Fastboard" */;
+			buildPhases = (
+				3E6E416F47D14E9AE4CB518CDFEE2FD2 /* Headers */,
+				C9A87C75378E89FD2360B51C31025917 /* Sources */,
+				E42FBF45EE1D911308E8910237A201CB /* Frameworks */,
+				AC08BBA03A678846B22FDCB479EEF48F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEDB42610F12F5E639D0B2C89919035A /* PBXTargetDependency */,
+				98A5D5DA51266CAC0DCFE9CC0F58CEE0 /* PBXTargetDependency */,
+			);
+			name = Fastboard;
+			productName = Fastboard;
+			productReference = 6AF279AB629184C658EFA156D552216E /* Fastboard */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 240E0D88EE9A1E367F6B2F940524139F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A6F633BD0A4B9EF892715BEB76AC948 /* dsBridge */,
+				BE49CDB6FCC514206F1F9C497AE5AB09 /* Fastboard */,
+				750579D9E74AA25AB515AD198A40FF8D /* Fastboard-Icons */,
+				A7F3302A6291E4A04C78DF417924FB4D /* Pods-ExampleFastboard */,
+				887E769F555AF76F514A7276E2BA1CB8 /* Whiteboard */,
+				0EB9E06B4A4636CA9288D815FC9DBFC5 /* Whiteboard-Whiteboard */,
+				84B44807A12996D487A4A591A481D6A0 /* YYModel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07E13AB1665176689508502D72E6F9B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3147192396D566BCB8D867A7C963154B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7921CAB05739A202813E9FA5CBF1A489 /* 3861930 in Resources */,
+				D5128380B6F26B4971BDB7A6EE4962BF /* index.html in Resources */,
+				C4F725A2EA0F6D5BD6B3C64ACDD5627C /* main.1413e9a0.css in Resources */,
+				25D87AC63D56206A8E8ECD8C67EB94B0 /* main.f1d5e41e.js in Resources */,
+				0AA7072C949332D449921853D5F32468 /* runtime.36e3f0da.js in Resources */,
+				44FB8D2853BC8EE1DCEF4AC24447099C /* vendor.5611aab0.css in Resources */,
+				DC3D4422B888C2E2D6E6A3AA111BF79C /* vendor.c49dfe75.js in Resources */,
+				7AC41A9FB52E15A9AF2F6AE250CD0CDF /* web-sdk.b9b319d7.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83071B4BA413B68AE1022ECBC597C0CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9647C236664A7AD629769533D49717D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0025A336061BBEEB0DF26C115007DFD /* Whiteboard-Whiteboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9853036A91BA1F1E2A4578AAE73AABFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				468E1F8140391CC3F44F832567846C29 /* Icons.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC08BBA03A678846B22FDCB479EEF48F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E08538AC4D0B10B3322DE8E76F98C65 /* Fastboard-Icons in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F84FDAA114ADDBF54ED6C59E2AFA0826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		031D508102ECC4CCC95A8974506318A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66B97DD82BF63F1A1C291F5CB6D85254 /* WhiteAppParam.m in Sources */,
+				4E936F830F41374516B4C81469F72332 /* WhiteAudioMixerBridge.m in Sources */,
+				7E65B6A1C41565CE8E28745048012E52 /* Whiteboard-dummy.m in Sources */,
+				5C1FED637AC8A6FA9BBF08A6D93129DF /* WhiteBoardView.m in Sources */,
+				5A445EA84CAD55B3013185E1E9312833 /* WhiteBroadcastState.m in Sources */,
+				66450DE67DDD27D52CF3856E785EA0CF /* WhiteCameraBound.m in Sources */,
+				FAFF60EC473EF771757AC9BBD846D95D /* WhiteCameraConfig.m in Sources */,
+				12D4C4302CAD5715521ABA6A11908F48 /* WhiteCameraState.m in Sources */,
+				822D883851C04C003282F66DA85ABB86 /* WhiteCombinePlayer.m in Sources */,
+				259865E8B8A9228EAA91C0A67D1BB6F9 /* WhiteCommonCallbacks.m in Sources */,
+				94D20EE2B612477AC1B63E6BC3D52216 /* WhiteConsts.m in Sources */,
+				973D7A4C33CC84990BE753DA8F98DF75 /* WhiteConversionInfo.m in Sources */,
+				312594EB9A89DE5CD650327841628BF5 /* WhiteConverter.m in Sources */,
+				B0C500CD97F5507FC498742DDA5C0149 /* WhiteDisplayer.m in Sources */,
+				5D497AF4DA563E53500F29DA320A212A /* WhiteDisplayerState.m in Sources */,
+				57ECCAF264E259C6D793E7DFE1349E50 /* WhiteEvent.m in Sources */,
+				F069641032BBE0AE65E0D0195CB9A7A1 /* WhiteFontFace.m in Sources */,
+				B6815FDA13D1A75F40A8F692F6652790 /* WhiteGlobalState.m in Sources */,
+				489289EC97451D30ABD56622D678E559 /* WhiteImageInformation.m in Sources */,
+				8BFA3FBE6C918576A5009925CCCD22B2 /* WhiteMemberInformation.m in Sources */,
+				2D121E2B21B6D447D6818DA10C1E3ECE /* WhiteMemberState.m in Sources */,
+				A5235DEF273763C1F7CD036E7C17E05F /* WhiteObject.m in Sources */,
+				A5E89EEDF24A7143668930EC23852006 /* WhitePanEvent.m in Sources */,
+				04CDF8C6743CE03E9E51B7CEE705DFB9 /* WhitePlayer.m in Sources */,
+				DD42338169A38D27D11F121DEE872D54 /* WhitePlayerConfig.m in Sources */,
+				3325F9B9AE8F8D747378C4590E3E2852 /* WhitePlayerEvent.m in Sources */,
+				FFC550CF9802DD814A5713EE537D534E /* WhitePlayerState.m in Sources */,
+				E44334F438DF6FB59431CCCDDBFB43AC /* WhitePlayerTimeInfo.m in Sources */,
+				BA4777D0022D3742C9443AC1167A94A6 /* WhitePptPage.m in Sources */,
+				D5F0A5CC45B8527783A16788A7E8017F /* WhiteRectangleConfig.m in Sources */,
+				E95CD3D30B262B7D8EA40AC2D9E466B0 /* WhiteRoom.m in Sources */,
+				995CE067CF05185E5A4529434A0AC196 /* WhiteRoomCallbacks.m in Sources */,
+				CA88723185501A656A7F54060125F20B /* WhiteRoomConfig.m in Sources */,
+				D8615A6F1B5EF73977B6CBF83A1DE22F /* WhiteRoomMember.m in Sources */,
+				3E90142D3DF63EEDA8202517734C0D08 /* WhiteRoomState.m in Sources */,
+				DD9C46E1BE929A667AC465BA17E16C43 /* WhiteScene.m in Sources */,
+				87D99C448CE0DAE147B3288FB4EFCBC5 /* WhiteSceneState.m in Sources */,
+				490B019453DD359EB995C890432C060F /* WhiteSDK.m in Sources */,
+				DC125292161AA70FEA73E8F39E4A89BB /* WhiteSDK+Replayer.m in Sources */,
+				9E00234583A430E5F41805B90F81641D /* WhiteSDK+Room.m in Sources */,
+				C8569DCFABE1044FFE028DF315E63215 /* WhiteSdkConfiguration.m in Sources */,
+				F6FFEC8F8EAAA3831B26A8D20D14A206 /* WhiteSliderView.m in Sources */,
+				C8F40A2A6197D63EFBC88E6FF0CDB453 /* WhiteVideoView.m in Sources */,
+				188D41EE640AADC127E31FC45FA14AC3 /* WhiteWebViewInjection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		072882CC456CBD75698816E0B5A42698 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A75FC41DD85B91405835DA4CF7D0F43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4244D5F634897CF19FC465E1499E9BC7 /* Pods-ExampleFastboard-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FF479BB347DDB9CF9F6336717B6322F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				350B5AD1CF7327982637937FA9678E9C /* NSObject+YYModel.m in Sources */,
+				C847AE6A1EEFCDF094BCF6B036BF79EF /* YYClassInfo.m in Sources */,
+				247E2ECE044B2A5DBA1D667D50FC1665 /* YYModel-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD5D81D7A8462721ACC45FB35216246 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58D04AA81E036A714A8A359739D2C6BA /* dsBridge-dummy.m in Sources */,
+				789DF34B1C20ADDD2BFA3CBE23C28119 /* DSCallInfo.m in Sources */,
+				A6CF3F8810818AC10380256D7EECE49B /* DWKWebView.m in Sources */,
+				11BAE23B757D8777E4BBE0FA030A68A7 /* InternalApis.m in Sources */,
+				6B008CBF80BDDB896CB4B3AC4D53DFC6 /* JSBUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF4F6383A20751D2AE25FDA915D166FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9A87C75378E89FD2360B51C31025917 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF5C751FBC22996DDCC9DD5D972E8D3 /* Appearancemanager.swift in Sources */,
+				2C2704E4198B9BAF9263FB7C0B9EAC57 /* ApplianceButton.swift in Sources */,
+				41620B51C882FF51B02CE708FEA04E55 /* CompactFastboardOverlay.swift in Sources */,
+				08B06649693679BF62D49C6B3A0F6820 /* ControlBar.swift in Sources */,
+				EF800A2712E566CAF758961B2B3A026D /* DefaultOperationItem.swift in Sources */,
+				60F7204B076E6A555B6E18B59DBC38FC /* DefaultOperationType.swift in Sources */,
+				DA5AB97C6C3A2055BBB1EABED58756FF /* DefaultTheme.swift in Sources */,
+				CF194F106ACA0DC9F79BB31DF28F46DD /* DelegateProxy.swift in Sources */,
+				0F65CB919057E616525E4C8A51C956D5 /* Fastboard.swift in Sources */,
+				8DE91FA26514C945EBF81309CA385429 /* Fastboard+FastPanelControl.swift in Sources */,
+				B7FDE3F5086E9EE3D4E9F061300E9628 /* Fastboard-dummy.m in Sources */,
+				13C65DECB4B3A522889B012419600B27 /* FastboardDelegate.swift in Sources */,
+				78DE1230708955B913B4DDB9F463A4C2 /* FastboardManager.swift in Sources */,
+				651A7F09CFE5DBEF32295FFAE5C104B4 /* FastboardOverlay.swift in Sources */,
+				98803E93B520A40C68972E10859252A9 /* FastboardView.swift in Sources */,
+				5980386E46BB399D169D9CA1298E25AC /* FastConfiguration.swift in Sources */,
+				2A9BEA11C47B51DDEEE7B03F270CFBB3 /* FastError.swift in Sources */,
+				53937C68AD3A56A0D92EFF7C44E8B718 /* FastOperation+NeedColor.swift in Sources */,
+				D1B621E37C0568093E3196CB439A593D /* FastOperation+NeedDelete.swift in Sources */,
+				DAEDA6B25D3190B8D6FBC90F10339326 /* FastOperationItem.swift in Sources */,
+				C1AE83D52E988599D4D6182C890BBC24 /* FastPanel.swift in Sources */,
+				1CAEC1D799224064EBDEB6BC48C7C3B5 /* FastPanelControl.swift in Sources */,
+				F0293F042302388A770965ABCFB0709E /* FastPanelDelegate.swift in Sources */,
+				F2507CD478B4ECB2F4B207869091DD45 /* FastProxy.m in Sources */,
+				5B1DE153731C53A7099B9D82E3766BB3 /* FastRoomPhase.swift in Sources */,
+				CE06C1DE16FE2B7226EDB033191BCE11 /* IndicatorMoreButton.swift in Sources */,
+				D1F2BC7DD6C2DD664B58CC1511AED394 /* Load.m in Sources */,
+				2BE6C351B9870457AFAB1EE8D4C0A354 /* Region.swift in Sources */,
+				AF199A9E558198AF8333BE31D3BCD199 /* RegularFastboardOverlay.swift in Sources */,
+				D4B9DDDAAE73C0A8DC6992CB8EF266CD /* SubPanelView.swift in Sources */,
+				EE8D8946D31DB072470B871C5877CCB3 /* Theme.swift in Sources */,
+				2D87FE1D65B1C7517398CB8BE503FD08 /* ThemeManager.swift in Sources */,
+				F5FE73BC1F448EEFE1F26C54945DF83C /* TraitCollection+Extension.swift in Sources */,
+				80921C6BDC350195D4A33D77472C6189 /* TraitUpdateHandler.swift in Sources */,
+				38979C35B20810FDA242497FFFC1DAFC /* UIColor+Convince.swift in Sources */,
+				0638CA9997E12DA641E5A90D8D2E4979 /* UIColor+NSNumber.swift in Sources */,
+				78163129CBF9510CB920867EB19D3F93 /* UIImage+Bundle.swift in Sources */,
+				86FA26174494885E3D7458D384002251 /* UIImage+ColorItem.swift in Sources */,
+				98FC5DC91216E5BD146805F528F8C533 /* UIImage+tint.swift in Sources */,
+				97C66FC6A63AAFC316AF9A7D429AC88C /* UIView+Theme.swift in Sources */,
+				9B3FD92DFBA0790B6D06E6752B2A55A2 /* WhiteBoardView+Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04DB7A80EA25FA9319EDF4F7815F2E77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Whiteboard;
+			target = 887E769F555AF76F514A7276E2BA1CB8 /* Whiteboard */;
+			targetProxy = 6F974599E402AF5C33024078442679D7 /* PBXContainerItemProxy */;
+		};
+		374FF2447BA9B1E07CFDC6794BC19693 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Fastboard;
+			target = BE49CDB6FCC514206F1F9C497AE5AB09 /* Fastboard */;
+			targetProxy = BFC977DD6059C534C6BC7ACF1387F5E3 /* PBXContainerItemProxy */;
+		};
+		3C1BFFE06DF8A8DADAA1B137E6B3F562 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Whiteboard-Whiteboard";
+			target = 0EB9E06B4A4636CA9288D815FC9DBFC5 /* Whiteboard-Whiteboard */;
+			targetProxy = 6D514EB40A847F18EA1F9F915C571836 /* PBXContainerItemProxy */;
+		};
+		5DB07B5270145743D7DBEA19F9561425 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = dsBridge;
+			target = 1A6F633BD0A4B9EF892715BEB76AC948 /* dsBridge */;
+			targetProxy = B1BA85636593B8E08F035F44C6E5BB69 /* PBXContainerItemProxy */;
+		};
+		6D47DE9072664ED991336B0C8BBD593C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = dsBridge;
+			target = 1A6F633BD0A4B9EF892715BEB76AC948 /* dsBridge */;
+			targetProxy = ADF88C9190032475C9C4753AFC9D0690 /* PBXContainerItemProxy */;
+		};
+		98A5D5DA51266CAC0DCFE9CC0F58CEE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Whiteboard;
+			target = 887E769F555AF76F514A7276E2BA1CB8 /* Whiteboard */;
+			targetProxy = 9181708CE1F043A62D1FB9378AB80468 /* PBXContainerItemProxy */;
+		};
+		A31403BE8B647A12162E67BCE848E664 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YYModel;
+			target = 84B44807A12996D487A4A591A481D6A0 /* YYModel */;
+			targetProxy = 25FBD71D660B3370354DDED48FACFF25 /* PBXContainerItemProxy */;
+		};
+		BEDB42610F12F5E639D0B2C89919035A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Fastboard-Icons";
+			target = 750579D9E74AA25AB515AD198A40FF8D /* Fastboard-Icons */;
+			targetProxy = E64C0C3B3FDEE5C3D82FABFAC2F19D20 /* PBXContainerItemProxy */;
+		};
+		FFAF8FD64BEC65225ED5F23C38FEBF60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YYModel;
+			target = 84B44807A12996D487A4A591A481D6A0 /* YYModel */;
+			targetProxy = CBF66BDE818A63F20A6DC23F545ACA0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0054D2EAB6E756963A73969C09B98C23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48E38291C57ABE5C21B488A22E8D59C1 /* Whiteboard.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Whiteboard/Whiteboard-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Whiteboard/Whiteboard-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Whiteboard/Whiteboard.modulemap";
+				PRODUCT_MODULE_NAME = Whiteboard;
+				PRODUCT_NAME = Whiteboard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		060D2E962F0F1F134628C143B3A362F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D309F9767962213375C80BB414947DE5 /* dsBridge.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/dsBridge/dsBridge-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/dsBridge/dsBridge-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/dsBridge/dsBridge.modulemap";
+				PRODUCT_MODULE_NAME = dsBridge;
+				PRODUCT_NAME = dsBridge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4214E6946993DF02ED98D89047C64016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		44502704DB7DD5BAAA930E908780AFAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32BB212DF09F9C0F5A223375D7AEB70C /* Whiteboard.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Whiteboard";
+				IBSC_MODULE = Whiteboard;
+				INFOPLIST_FILE = "Target Support Files/Whiteboard/ResourceBundle-Whiteboard-Whiteboard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = Whiteboard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		46D747DEF2D0742500B5BEA4ABDD8544 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32BB212DF09F9C0F5A223375D7AEB70C /* Whiteboard.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Whiteboard/Whiteboard-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Whiteboard/Whiteboard-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Whiteboard/Whiteboard.modulemap";
+				PRODUCT_MODULE_NAME = Whiteboard;
+				PRODUCT_NAME = Whiteboard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4D00087FF2203F327CC79A77FF4212FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5798D661D3234FF76CA03506CF14FF11 /* Fastboard.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Fastboard/Fastboard-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Fastboard/Fastboard-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Fastboard/Fastboard.modulemap";
+				PRODUCT_MODULE_NAME = Fastboard;
+				PRODUCT_NAME = Fastboard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		50B6FBB22D8C7406BAE18BF0D1F3D9F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 148C00EF8648485BCB838C4B0121CFE8 /* YYModel.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YYModel/YYModel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YYModel/YYModel.modulemap";
+				PRODUCT_MODULE_NAME = YYModel;
+				PRODUCT_NAME = YYModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		55E9E771C0BB5E6434DD1C32DAAAE30A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86DC84643539A9EFA9582E6B0D6A0195 /* Pods-ExampleFastboard.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ExampleFastboard/Pods-ExampleFastboard-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ExampleFastboard/Pods-ExampleFastboard.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5A705A9751F1AABE2DA4722D4E34F4E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90663C4638F994A74C36DF56B43D3A15 /* dsBridge.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/dsBridge/dsBridge-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/dsBridge/dsBridge-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/dsBridge/dsBridge.modulemap";
+				PRODUCT_MODULE_NAME = dsBridge;
+				PRODUCT_NAME = dsBridge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		85D69AF3A961FAC8AA434C30CA0C8CED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 545E6FA1FD3CD5A6E583BA2ADAD61EE2 /* Fastboard.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Fastboard";
+				IBSC_MODULE = Fastboard;
+				INFOPLIST_FILE = "Target Support Files/Fastboard/ResourceBundle-Icons-Fastboard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = Icons;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A29BA6133AE4D849A68185F54D119C47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 902DE4ADF76FAD75E945CC536F66BA0D /* Pods-ExampleFastboard.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ExampleFastboard/Pods-ExampleFastboard-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ExampleFastboard/Pods-ExampleFastboard.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B9AE85B91BAAE7B8292BE5CC3990FBAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48E38291C57ABE5C21B488A22E8D59C1 /* Whiteboard.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Whiteboard";
+				IBSC_MODULE = Whiteboard;
+				INFOPLIST_FILE = "Target Support Files/Whiteboard/ResourceBundle-Whiteboard-Whiteboard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = Whiteboard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C1EC9F3BF23078D44C9E213737020A1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5798D661D3234FF76CA03506CF14FF11 /* Fastboard.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Fastboard";
+				IBSC_MODULE = Fastboard;
+				INFOPLIST_FILE = "Target Support Files/Fastboard/ResourceBundle-Icons-Fastboard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = Icons;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		CD85FD90473CFBE797E4264E7BBC70AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D52809103E0FBDBE58691953AE787C88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9200559293C82CB0DE3F9710552527D1 /* YYModel.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YYModel/YYModel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YYModel/YYModel.modulemap";
+				PRODUCT_MODULE_NAME = YYModel;
+				PRODUCT_NAME = YYModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E04CFA08E01BFB533A2FEEED15EB8EA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 545E6FA1FD3CD5A6E583BA2ADAD61EE2 /* Fastboard.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Fastboard/Fastboard-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Fastboard/Fastboard-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Fastboard/Fastboard.modulemap";
+				PRODUCT_MODULE_NAME = Fastboard;
+				PRODUCT_NAME = Fastboard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FACF18B2A680793CF89B8E0126396DB /* Build configuration list for PBXNativeTarget "Whiteboard-Whiteboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9AE85B91BAAE7B8292BE5CC3990FBAB /* Debug */,
+				44502704DB7DD5BAAA930E908780AFAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28D89D610716E9795232D1BA48E257F7 /* Build configuration list for PBXNativeTarget "Pods-ExampleFastboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A29BA6133AE4D849A68185F54D119C47 /* Debug */,
+				55E9E771C0BB5E6434DD1C32DAAAE30A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4214E6946993DF02ED98D89047C64016 /* Debug */,
+				CD85FD90473CFBE797E4264E7BBC70AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		485C5E83B54A3F761ED244445AB7DBF1 /* Build configuration list for PBXNativeTarget "dsBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A705A9751F1AABE2DA4722D4E34F4E5 /* Debug */,
+				060D2E962F0F1F134628C143B3A362F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CBD66C11785489E6CFBCA8900426EB7 /* Build configuration list for PBXNativeTarget "Whiteboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0054D2EAB6E756963A73969C09B98C23 /* Debug */,
+				46D747DEF2D0742500B5BEA4ABDD8544 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B676B0C6786220078510A73AF8CA93D /* Build configuration list for PBXNativeTarget "Fastboard-Icons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85D69AF3A961FAC8AA434C30CA0C8CED /* Debug */,
+				C1EC9F3BF23078D44C9E213737020A1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFB2181EC7E68F08838AB53E14DB1337 /* Build configuration list for PBXNativeTarget "Fastboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E04CFA08E01BFB533A2FEEED15EB8EA4 /* Debug */,
+				4D00087FF2203F327CC79A77FF4212FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD455EB5E70AF2BD2A761E3617FA4914 /* Build configuration list for PBXNativeTarget "YYModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D52809103E0FBDBE58691953AE787C88 /* Debug */,
+				50B6FBB22D8C7406BAE18BF0D1F3D9F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
