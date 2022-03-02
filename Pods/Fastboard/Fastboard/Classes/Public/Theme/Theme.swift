@@ -23,10 +23,20 @@ open class WhiteboardAssets: NSObject {
 
 open class PanelItemAssets: NSObject {
     @objc
-    public init(normalIconColor: UIColor, selectedIconColor: UIColor, highlightBgColor: UIColor, subOpsIndicatorColor: UIColor, pageTextLabelColor: UIColor) {
+    public init(normalIconColor: UIColor,
+                selectedIconColor: UIColor,
+                selectedIconBgColor: UIColor,
+                highlightColor: UIColor,
+                highlightBgColor: UIColor,
+                disableColor: UIColor,
+                subOpsIndicatorColor: UIColor,
+                pageTextLabelColor: UIColor) {
         self.normalIconColor = normalIconColor
         self.selectedIconColor = selectedIconColor
+        self.selectedIconBgColor = selectedIconBgColor
+        self.highlightColor = highlightColor
         self.highlightBgColor = highlightBgColor
+        self.disableColor = disableColor
         self.subOpsIndicatorColor = subOpsIndicatorColor
         self.pageTextLabelColor = pageTextLabelColor
     }
@@ -38,7 +48,16 @@ open class PanelItemAssets: NSObject {
     open var selectedIconColor: UIColor
     
     @objc
+    open var selectedIconBgColor: UIColor
+    
+    @objc
+    open var highlightColor: UIColor
+    
+    @objc
     open var highlightBgColor: UIColor
+    
+    @objc
+    open var disableColor: UIColor
     
     @objc
     open var subOpsIndicatorColor: UIColor
@@ -67,7 +86,9 @@ open class ControlBarAssets: NSObject {
 
 open class ThemeAsset: NSObject {
     @objc
-    public init(whiteboardAssets: WhiteboardAssets, controlBarAssets: ControlBarAssets, panelItemAssets: PanelItemAssets) {
+    public init(whiteboardAssets: WhiteboardAssets,
+                controlBarAssets: ControlBarAssets,
+                panelItemAssets: PanelItemAssets) {
         self.whiteboardAssets = whiteboardAssets
         self.controlBarAssets = controlBarAssets
         self.panelItemAssets = panelItemAssets

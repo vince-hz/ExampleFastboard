@@ -8,7 +8,141 @@
 import Foundation
 import Whiteboard
 
-public class RegularFastboardOverlay: NSObject, FastboardOverlay {
+public class RegularFastboardOverlay: NSObject, FastboardOverlay, FastPanelDelegate {
+    func showReconnectingView(_ show: Bool) {
+        if show {
+            if reconnectingView.superview == nil {
+                operationPanel.view?.superview?.addSubview(reconnectingView)
+                reconnectingView.frame = operationPanel.view?.superview?.bounds ?? .zero
+                reconnectingView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+                reconnectingView.activityView.startAnimating()
+            } else {
+                reconnectingView.activityView.startAnimating()
+            }
+        } else {
+            reconnectingView.removeFromSuperview()
+        }
+    }
+    
+    public func updateRoomPhaseUpdate(_ phase: FastRoomPhase) {
+        guard FastboardManager.showActivityIndicatorWhenReconnecting else { return }
+        switch phase {
+        case .reconnecting:
+            showReconnectingView(true)
+        default:
+            showReconnectingView(false)
+        }
+    }
+    
+    private var currentAppliance: ApplianceItem? {
+        didSet {
+            guard currentAppliance !== oldValue else { return }
+            if previousAppliance !== oldValue {
+                previousAppliance = oldValue
+            }
+        }
+    }
+    private var previousAppliance: ApplianceItem?
+    private var exchangeForEraser: FastOperationItem?
+    
+    @available(iOS 12.1, *)
+    public func respondToPencilTap(_ tap: UIPencilPreferredAction) {
+        guard let currentAppliance = currentAppliance else { return }
+        func isCurrentEraser() -> Bool {
+            currentAppliance.identifier?.contains(identifierFor(appliance: .ApplianceEraser, withShapeKey: nil)) ?? false
+        }
+        func active(item: FastOperationItem, withSubPanel: Bool) {
+            func performSub(_ sub: SubOpsItem) {
+                sub.onClick(sub.associatedView as! UIButton)
+                if !withSubPanel {
+                    // Do not show panel
+                    sub.subPanelView.hide()
+                }
+            }
+            
+            if let a = item as? ApplianceItem {
+                a.onClick(a.button)
+                return
+            }
+            if let sub = item as? SubOpsItem {
+                performSub(sub)
+                return
+            }
+            
+        }
+        
+        func pencilItem() -> FastOperationItem? {
+            let pencilId = identifierFor(appliance: .AppliancePencil, withShapeKey: nil)
+            return operationPanel.items.first(where: {
+                $0.identifier?.contains(pencilId) ?? false
+            })
+        }
+        switch tap {
+        case .ignore:
+            return
+        case .switchEraser:
+            // If is eraser
+            if isCurrentEraser() {
+                if let exchangeForEraser = exchangeForEraser {
+                    active(item: exchangeForEraser, withSubPanel: false)
+                } else {
+                    if let previousAppliance = previousAppliance {
+                        exchangeForEraser = previousAppliance
+                        active(item: previousAppliance, withSubPanel: false)
+                    } else {
+                        // Set pencil as exchang
+                        if let pencil = pencilItem() {
+                            exchangeForEraser = pencil
+                            active(item: pencil, withSubPanel: false)
+                        }
+                    }
+                }
+            } else {
+                // Set exchange for eraser
+                exchangeForEraser = currentAppliance
+                // Switch to eraser
+                if let eraser = operationPanel.items.compactMap({ $0 as? ApplianceItem }).first(where: { $0.identifier == identifierFor(appliance: .ApplianceEraser, withShapeKey: nil)}) {
+                    eraser.onClick(eraser.button)
+                }
+            }
+        case .switchPrevious:
+            if let previousAppliance = previousAppliance {
+                active(item: previousAppliance, withSubPanel: false)
+            } else {
+                if let pencil = pencilItem() {
+                    active(item: pencil, withSubPanel: false)
+                }
+            }
+        case .showColorPalette:
+            func performShowColorPalette(on sub: SubOpsItem) {
+                if sub.subPanelView.superview == nil {
+                    sub.setupSubPanelViewHierarchy()
+                    sub.subPanelView.show()
+                } else {
+                    if sub.subPanelView.isHidden {
+                        sub.subPanelView.show()
+                    } else {
+                        sub.subPanelView.hide()
+                    }
+                }
+            }
+            
+            if let sub = operationPanel.items.compactMap ({ $0 as? SubOpsItem }).first(where: { $0.identifier?.contains(currentAppliance.identifier ?? "") ?? false}){
+                performShowColorPalette(on: sub)
+            } else {
+                // Select to pencil
+                let pencilId = identifierFor(appliance: .AppliancePencil, withShapeKey: nil)
+                if let pencil = operationPanel.items.first(where: {
+                    $0.identifier?.contains(pencilId) ?? false
+                }) {
+                    active(item: pencil, withSubPanel: true)
+                }
+            }
+        @unknown default:
+            return
+        }
+    }
+    
     @objc
     public func dismissAllSubPanels() {
         panels.forEach { $0.value.dismissAllSubPanels(except: nil)}
@@ -122,6 +256,11 @@ public class RegularFastboardOverlay: NSObject, FastboardOverlay {
             operationPanel.updateWithApplianceOutside(appliance, shape: shape)
             
             let identifier = identifierFor(appliance: appliance, withShapeKey: shape)
+            
+            if let item = operationPanel.flatItems.first(where: { $0.identifier == identifier }) as? ApplianceItem {
+                currentAppliance = item
+            }
+            
             if let item = operationPanel.flatItems.first(where: { $0.identifier == identifier }) {
                 updateDisplayStyleFromNewOperationItem(item)
             }
@@ -141,6 +280,17 @@ public class RegularFastboardOverlay: NSObject, FastboardOverlay {
     public func updateSceneState(_ scene: WhiteSceneState) {
         if let label = scenePanel.items.first(where: { $0.identifier == DefaultOperationIdentifier.operationType(.pageIndicator)!.identifier })?.associatedView as? UILabel {
             label.text = "\(scene.index + 1) / \(scene.scenes.count)"
+            scenePanel.view?.invalidateIntrinsicContentSize()
+        }
+        if let last = scenePanel.items.first(where: {
+            $0.identifier == DefaultOperationIdentifier.operationType(.previousPage)!.identifier
+        }) {
+            (last.associatedView as? UIButton)?.isEnabled = scene.index > 0
+        }
+        if let next = scenePanel.items.first(where: {
+            $0.identifier == DefaultOperationIdentifier.operationType(.nextPage)!.identifier
+        }) {
+            (next.associatedView as? UIButton)?.isEnabled = scene.index + 1 < scene.scenes.count
         }
     }
     
@@ -171,8 +321,28 @@ public class RegularFastboardOverlay: NSObject, FastboardOverlay {
     }
     
     public func itemWillBeExecution(fastPanel: FastPanel, item: FastOperationItem) {
-        // Hide all the other subPanels
-        panels.forEach { $0.value.dismissAllSubPanels(except: item)}
+        if let appliance = item as? ApplianceItem {
+            currentAppliance = appliance
+        } else if let sub = item as? SubOpsItem, sub.containsSelectableAppliance {
+            currentAppliance = sub.selectedApplianceItem
+        }
+        
+        if item is SubOpsItem {
+            // Hide all the other subPanels
+            panels.forEach { $0.value.dismissAllSubPanels(except: item)}
+        }
+        if item is ApplianceItem {
+            // If is single, hide all subPanel
+            // If has super, hide other subPanel
+            let superItem = panels
+                .map { $0.value.items }
+                .flatMap { $0 }
+                .compactMap { $0 as? SubOpsItem }
+                .first(where: { $0.subOps.contains { s in
+                    s === item
+                }})
+            panels.forEach { $0.value.dismissAllSubPanels(except: superItem)}
+        }
         
         if item is JustExecutionItem { return }
         if item is ColorItem { return }
@@ -217,6 +387,8 @@ public class RegularFastboardOverlay: NSObject, FastboardOverlay {
         .undoRedo: createUndoRedoPanel(),
         .scenes: createScenesPanel()
     ]
+    
+    lazy var reconnectingView: ReconnectingView = ReconnectingView()
 }
 
 extension RegularFastboardOverlay {

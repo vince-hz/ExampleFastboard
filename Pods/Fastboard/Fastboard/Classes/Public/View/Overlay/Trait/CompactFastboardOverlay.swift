@@ -8,7 +8,32 @@
 import Foundation
 import Whiteboard
 
-public class CompactFastboardOverlay: NSObject, FastboardOverlay {
+public class CompactFastboardOverlay: NSObject, FastboardOverlay, FastPanelDelegate {
+    func showReconnectingView(_ show: Bool) {
+        if show {
+            if reconnectingView.superview == nil {
+                operationPanel.view?.superview?.addSubview(reconnectingView)
+                reconnectingView.frame = operationPanel.view?.superview?.bounds ?? .zero
+                reconnectingView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+                reconnectingView.activityView.startAnimating()
+            } else {
+                reconnectingView.activityView.startAnimating()
+            }
+        } else {
+            reconnectingView.removeFromSuperview()
+        }
+    }
+    
+    public func updateRoomPhaseUpdate(_ phase: FastRoomPhase) {
+        guard FastboardManager.showActivityIndicatorWhenReconnecting else { return }
+        switch phase {
+        case .reconnecting:
+            showReconnectingView(true)
+        default:
+            showReconnectingView(false)
+        }
+    }
+    
     public func dismissAllSubPanels() {
         panels.forEach { $0.value.dismissAllSubPanels(except: nil)}
     }
@@ -142,6 +167,17 @@ public class CompactFastboardOverlay: NSObject, FastboardOverlay {
     public func updateSceneState(_ scene: WhiteSceneState) {
         if let label = scenePanel.items.first(where: { $0.identifier == DefaultOperationIdentifier.operationType(.pageIndicator)!.identifier })?.associatedView as? UILabel {
             label.text = "\(scene.index + 1) / \(scene.scenes.count)"
+            scenePanel.view?.invalidateIntrinsicContentSize()
+        }
+        if let last = scenePanel.items.first(where: {
+            $0.identifier == DefaultOperationIdentifier.operationType(.previousPage)!.identifier
+        }) {
+            (last.associatedView as? UIButton)?.isEnabled = scene.index > 0
+        }
+        if let next = scenePanel.items.first(where: {
+            $0.identifier == DefaultOperationIdentifier.operationType(.nextPage)!.identifier
+        }) {
+            (next.associatedView as? UIButton)?.isEnabled = scene.index + 1 < scene.scenes.count
         }
     }
     
@@ -171,8 +207,22 @@ public class CompactFastboardOverlay: NSObject, FastboardOverlay {
     }
     
     public func itemWillBeExecution(fastPanel: FastPanel, item: FastOperationItem) {
-        // Hide all the other subPanels
-        panels.forEach { $0.value.dismissAllSubPanels(except: item)}
+        if item is SubOpsItem {
+            // Hide all the other subPanels
+            panels.forEach { $0.value.dismissAllSubPanels(except: item)}
+        }
+        if item is ApplianceItem {
+            // If is single, hide all subPanel
+            // If has super, hide other subPanel
+            let superItem = panels
+                .map { $0.value.items }
+                .flatMap { $0 }
+                .compactMap { $0 as? SubOpsItem }
+                .first(where: { $0.subOps.contains { s in
+                    s === item
+                }})
+            panels.forEach { $0.value.dismissAllSubPanels(except: superItem)}
+        }
         
         if item is JustExecutionItem { return }
         if item is ColorItem { return }
@@ -241,6 +291,8 @@ public class CompactFastboardOverlay: NSObject, FastboardOverlay {
         .undoRedo: createUndoRedoPanel(),
         .scenes: createScenesPanel()
     ]
+    
+    lazy var reconnectingView: ReconnectingView = ReconnectingView()
 }
 
 extension CompactFastboardOverlay {

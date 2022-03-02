@@ -12,27 +12,33 @@ public class DefaultTheme: NSObject {
     @objc
     public class var defaultLightTheme: ThemeAsset {
         ThemeAsset(whiteboardAssets: WhiteboardAssets(whiteboardBackgroundColor: .white,
-                                                      containerColor: .lightGray),
+                                                      containerColor: .white),
                    controlBarAssets: ControlBarAssets(backgroundColor: .white,
-                                                      borderColor: .lightGray),
-                   panelItemAssets: .init(normalIconColor: .black,
-                                          selectedIconColor: .systemBlue,
-                                          highlightBgColor: .init(hexString: "E8F0FE"),
-                                          subOpsIndicatorColor: .black,
-                                          pageTextLabelColor: .black))
+                                                      borderColor: .init(hexString: "#E5E8F0")),
+                   panelItemAssets: .init(normalIconColor: .init(hexString: "#5D6066"),
+                                          selectedIconColor: .init(hexString: "#3381FF"),
+                                          selectedIconBgColor: .clear,
+                                          highlightColor: .init(hexString: "#2867CC"),
+                                          highlightBgColor: .clear,
+                                          disableColor: .init(hexString: "#7B7E84"),
+                                          subOpsIndicatorColor: .init(hexString: "#5D6066"),
+                                          pageTextLabelColor: .init(hexString: "#5D6066")))
     }
     
     @objc
     public static var defaultDarkTheme: ThemeAsset {
-        ThemeAsset(whiteboardAssets: WhiteboardAssets(whiteboardBackgroundColor: .black,
-                                                      containerColor: .lightGray),
-                   controlBarAssets: ControlBarAssets(backgroundColor: .black,
-                                                      borderColor: .lightGray),
-                   panelItemAssets: .init(normalIconColor: .white,
-                                          selectedIconColor: .systemBlue,
-                                          highlightBgColor: .lightGray,
-                                          subOpsIndicatorColor: .lightGray,
-                                          pageTextLabelColor: .white))
+        ThemeAsset(whiteboardAssets: WhiteboardAssets(whiteboardBackgroundColor: .init(hexString: "#14181E"),
+                                                      containerColor: .init(hexString: "#14181E")),
+                   controlBarAssets: ControlBarAssets(backgroundColor: .init(hexString: "#14181E"),
+                                                      borderColor: .init(hexString: "#5D6066")),
+                   panelItemAssets: .init(normalIconColor: .init(hexString: "#999CA3"),
+                                          selectedIconColor: .init(hexString: "#2867CC"),
+                                          selectedIconBgColor: .clear,
+                                          highlightColor: .init(hexString: "#1E4D99"),
+                                          highlightBgColor: .clear,
+                                          disableColor: .init(hexString: "#4B4D54"),
+                                          subOpsIndicatorColor: .init(hexString: "#999CA3"),
+                                          pageTextLabelColor: .init(hexString: "#999CA3")))
     }
     
     @available(iOS 13, *)
@@ -52,11 +58,29 @@ public class DefaultTheme: NSObject {
             } else {
                 return defaultLightTheme.panelItemAssets.selectedIconColor
             }
+        }), selectedIconBgColor: .init(dynamicProvider: { c in
+            if c.userInterfaceStyle == .dark {
+                return defaultDarkTheme.panelItemAssets.selectedIconBgColor
+            } else {
+                return defaultLightTheme.panelItemAssets.selectedIconBgColor
+            }
+        }), highlightColor: .init(dynamicProvider: { c in
+            if c.userInterfaceStyle == .dark {
+                return defaultDarkTheme.panelItemAssets.highlightColor
+            } else {
+                return defaultLightTheme.panelItemAssets.highlightColor
+            }
         }), highlightBgColor: .init(dynamicProvider: { c in
             if c.userInterfaceStyle == .dark {
                 return defaultDarkTheme.panelItemAssets.highlightBgColor
             } else {
                 return defaultLightTheme.panelItemAssets.highlightBgColor
+            }
+        }), disableColor: .init(dynamicProvider: { c in
+            if c.userInterfaceStyle == .dark {
+                return defaultDarkTheme.panelItemAssets.disableColor
+            } else {
+                return defaultLightTheme.panelItemAssets.disableColor
             }
         }), subOpsIndicatorColor: .init(dynamicProvider: { c in
             if c.userInterfaceStyle == .dark {
@@ -64,7 +88,13 @@ public class DefaultTheme: NSObject {
             } else {
                 return defaultLightTheme.panelItemAssets.subOpsIndicatorColor
             }
-        }), pageTextLabelColor: UIColor.label)
+        }), pageTextLabelColor: .init(dynamicProvider: { c in
+            if c.userInterfaceStyle == .dark {
+                return defaultDarkTheme.panelItemAssets.pageTextLabelColor
+            } else {
+                return defaultLightTheme.panelItemAssets.pageTextLabelColor
+            }
+        }))
         
         return ThemeAsset(whiteboardAssets: fastAsset,
                    controlBarAssets: controlBarAssets,

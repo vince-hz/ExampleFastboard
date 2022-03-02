@@ -28,6 +28,9 @@ public class Fastboard: NSObject {
                 delegate?.fastboardDidSetupOverlay?(self, overlay: view.overlay)
             }
             initStateAfterJoinRoom()
+            if !view.traitCollection.hasCompact {
+                view.prepareForPencil()
+            }
         }
     }
     
@@ -63,6 +66,7 @@ public class Fastboard: NSObject {
     
     @objc
     public func disconnectRoom() {
+        view.pencilHandler?.recoverApplianceFromTempRemove()
         room?.disconnect(nil)
     }
     
@@ -136,18 +140,24 @@ public class Fastboard: NSObject {
         }
         let fastboardOverlay = configuration.customOverlay ?? defaultOverlay()
         let fastboardView = FastboardView(overlay: fastboardOverlay)
-        self.init(view: fastboardView, roomConfig: configuration.whiteRoomConfig)
-        
-        
-        let whiteSDK = WhiteSDK(whiteBoardView: fastboardView.whiteboardView,
-                                config: configuration.whiteSdkConfiguration,
-                                commonCallbackDelegate: sdkDelegateProxy)
-        self.whiteSDK = whiteSDK
+        self.init(view: fastboardView,
+                  roomConfig: configuration.whiteRoomConfig,
+                  sdkConfig: configuration.whiteSdkConfiguration)
     }
     
-    init(view: FastboardView, roomConfig: WhiteRoomConfig){
+    init(view: FastboardView,
+         roomConfig: WhiteRoomConfig,
+         sdkConfig: WhiteSdkConfiguration){
         self.view = view
         self.roomConfig = roomConfig
+        super.init()
+        let whiteSDK = WhiteSDK(whiteBoardView: view.whiteboardView,
+                                config: sdkConfig,
+                                commonCallbackDelegate: self.sdkDelegateProxy)
+        self.whiteSDK = whiteSDK
+        if !view.traitCollection.hasCompact {
+            self.prepareForSystemPencilBehavior()
+        }
     }
 }
 
@@ -162,10 +172,15 @@ extension Fastboard: WhiteCommonCallbackDelegate {
 
 extension Fastboard: WhiteRoomCallbackDelegate {
     public func firePhaseChanged(_ phase: WhiteRoomPhase) {
-        delegate?.fastboardPhaseDidUpdate(self, phase: .init(rawValue: phase.rawValue) ?? .unknown)
+        let fastPhase = FastRoomPhase(rawValue: phase.rawValue) ?? .unknown
+        view.overlay?.updateRoomPhaseUpdate(fastPhase)
+        delegate?.fastboardPhaseDidUpdate(self, phase: fastPhase)
     }
     
     public func fireRoomStateChanged(_ modifyState: WhiteRoomState!) {
+        if let _ = modifyState.memberState {
+            view.pencilHandler?.roomApplianceDidUpdate()
+        }
         if let sceneState = modifyState.sceneState {
             view.overlay?.updateSceneState(sceneState)
         }

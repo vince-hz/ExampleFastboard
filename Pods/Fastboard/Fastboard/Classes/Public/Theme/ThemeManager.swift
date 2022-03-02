@@ -42,9 +42,12 @@ public class ThemeManager: NSObject {
         PanelItemButton.appearance().iconNormalColor = asset.normalIconColor
         PanelItemButton.appearance().iconSelectedColor = asset.selectedIconColor
         PanelItemButton.appearance().iconHighlightBgColor = asset.highlightBgColor
+        PanelItemButton.appearance().justExecutionNormalColor = asset.normalIconColor
+        PanelItemButton.appearance().highlightColor = asset.highlightColor
+        PanelItemButton.appearance().iconSelectedBgColor = asset.selectedIconBgColor
         
         UIImageView.appearance(whenContainedInInstancesOf: [PanelItemButton.self]).tintColor = asset.subOpsIndicatorColor
-        UILabel.appearance(whenContainedInInstancesOf: [ControlBar.self]).textColor = asset.pageTextLabelColor
+        PageIndicatorLabel.appearance().configurableTextColor = asset.pageTextLabelColor
     }
     
     @objc

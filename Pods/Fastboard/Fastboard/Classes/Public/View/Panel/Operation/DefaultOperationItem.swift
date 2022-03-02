@@ -29,9 +29,10 @@ public class DefaultOperationItem: NSObject {
     @objc
     public static func clean() -> FastOperationItem {
         let image = UIImage.currentBundle(named: "whiteboard_clean")!
-        return JustExecutionItem(image: image,
-                          action: { room, _ in room.cleanScene(true) },
-                                 identifier: DefaultOperationIdentifier.operationType(.clean)!.identifier)
+        return JustExecutionItem(
+            image: image,
+            action: { room, _ in room.cleanScene(true) },
+            identifier: DefaultOperationIdentifier.operationType(.clean)!.identifier)
     }
     
     @objc
@@ -58,25 +59,29 @@ public class DefaultOperationItem: NSObject {
     
     @objc
     public static func redoItem() -> FastOperationItem {
-        JustExecutionItem(image: UIImage.currentBundle(named: "whiteboard_redo")!,
+        let item = JustExecutionItem(image: UIImage.currentBundle(named: "whiteboard_redo")!,
                           action: { room, _ in
             room.redo()
         }, identifier: DefaultOperationIdentifier.operationType(.redo)!.identifier)
+        item.button.isEnabled = false
+        return item
     }
     
     @objc
     public static func undoItem() -> FastOperationItem {
-        JustExecutionItem(image: UIImage.currentBundle(named: "whiteboard_undo")!,
+        let item = JustExecutionItem(image: UIImage.currentBundle(named: "whiteboard_undo")!,
                           action: { room, _ in
             room.undo()
         }, identifier: DefaultOperationIdentifier.operationType(.undo)!.identifier)
+        item.button.isEnabled = false
+        return item
     }
     
     @objc
     public static func previousPageItem() -> FastOperationItem {
         JustExecutionItem(image: UIImage.currentBundle(named: "scene_previous")!,
                           action: { room, _ in
-            room.pptPreviousStep()
+            room.prevPage(nil)
         }, identifier: DefaultOperationIdentifier.operationType(.previousPage)!.identifier)
     }
     
@@ -84,7 +89,7 @@ public class DefaultOperationItem: NSObject {
     public static func nextPageItem() -> FastOperationItem {
         JustExecutionItem(image: UIImage.currentBundle(named: "scene_next")!,
                           action: { room, _ in
-            room.pptNextStep()
+            room.nextPage(nil)
         }, identifier: DefaultOperationIdentifier.operationType(.nextPage)!.identifier)
     }
     
@@ -94,7 +99,7 @@ public class DefaultOperationItem: NSObject {
                           action: { room, _ in
             let index = room.sceneState.index
             let nextIndex = UInt(index + 1)
-            room.putScenes("/", scenes: [WhiteScene()], index: nextIndex)
+            room.addPage()
             room.setSceneIndex(nextIndex, completionHandler: nil)
         }, identifier: DefaultOperationIdentifier.operationType(.newPage)!.identifier)
     }
@@ -119,8 +124,9 @@ public class DefaultOperationItem: NSObject {
     
     @objc
     public static func pageIndicatorItem() -> FastOperationItem {
-        let label = UILabel()
+        let label = PageIndicatorLabel()
         label.font = .preferredFont(forTextStyle: .body)
+        label.textAlignment = .center
         return IndicatorItem(view: label,
                              identifier: DefaultOperationIdentifier.operationType(.pageIndicator)!.identifier)
     }

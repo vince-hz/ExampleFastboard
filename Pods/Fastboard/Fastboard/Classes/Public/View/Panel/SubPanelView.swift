@@ -9,7 +9,6 @@ import Foundation
 
 class SubPanelContainer: UIView {}
 
-
 class SubPanelView: UIView {
     override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
         guard !isHidden else { return nil }
@@ -27,6 +26,9 @@ class SubPanelView: UIView {
     }
     
     func hide() {
+        if let _ = layer.animation(forKey: "show") {
+            layer.removeAnimation(forKey: "show")
+        }
         isHidden = true
     }
     
@@ -35,7 +37,6 @@ class SubPanelView: UIView {
             isHidden = false
             return
         }
-        isHidden = false
         setNeedsLayout()
         layoutIfNeeded()
         // Spring Animation
@@ -47,14 +48,12 @@ class SubPanelView: UIView {
             offset = -(exceptView?.frame.size.width)!
         }
         
-        let group = CAAnimationGroup()
-        
         let transAnimation = CASpringAnimation(keyPath: "transform.translation.x")
         transAnimation.fromValue = offset
         transAnimation.toValue = 0
-        transAnimation.damping = 999
-        transAnimation.stiffness = 999
-        transAnimation.initialVelocity = 10
+        transAnimation.damping = 100
+        transAnimation.stiffness = 1000
+        transAnimation.initialVelocity = 0
         transAnimation.isRemovedOnCompletion = false
         transAnimation.fillMode = .forwards
         transAnimation.delegate = self
@@ -62,7 +61,7 @@ class SubPanelView: UIView {
     }
     
     var animationOffset: CGFloat = 0
-    var exceptView: UIView?
+    weak var exceptView: UIView?
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubview(containerView)
@@ -103,7 +102,11 @@ class SubPanelView: UIView {
     let itemSize: CGSize = .init(width: 40, height: 40)
     
     func rebuildFrom(views: [UIView]) {
-        containerView.subviews.forEach { $0.removeFromSuperview() }
+        containerView.subviews.forEach {
+            if !($0 is UIVisualEffectView) {
+                $0.removeFromSuperview()
+            }
+        }
         setupFromItemViews(views: views)
     }
     
@@ -171,6 +174,12 @@ class SubPanelView: UIView {
 }
 
 extension SubPanelView: CAAnimationDelegate {
+    func animationDidStart(_ anim: CAAnimation) {
+        if let _ = layer.animation(forKey: "show") {
+            isHidden = false
+        }
+    }
+    
     func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
         if flag {
             if layer.animation(forKey: "show") === anim {
