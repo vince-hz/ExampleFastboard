@@ -1,28 +1,28 @@
 PODS:
   - dsBridge (3.0.6)
-  - Fastboard (1.0.0):
-    - Fastboard/core (= 1.0.0)
-  - Fastboard/core (1.0.0):
-    - Whiteboard (~> 2.16.4)
-  - Whiteboard (2.16.4):
-    - Whiteboard/Converter (= 2.16.4)
-    - Whiteboard/NativeReplayer (= 2.16.4)
-    - Whiteboard/Replayer (= 2.16.4)
-    - Whiteboard/Room (= 2.16.4)
-  - Whiteboard/Base (2.16.4):
+  - Fastboard (1.0.2):
+    - Fastboard/core (= 1.0.2)
+  - Fastboard/core (1.0.2):
+    - Whiteboard (~> 2.16.7)
+  - Whiteboard (2.16.7):
+    - Whiteboard/Converter (= 2.16.7)
+    - Whiteboard/NativeReplayer (= 2.16.7)
+    - Whiteboard/Replayer (= 2.16.7)
+    - Whiteboard/Room (= 2.16.7)
+  - Whiteboard/Base (2.16.7):
     - dsBridge (~> 3.0.2)
     - Whiteboard/Object
-  - Whiteboard/Converter (2.16.4):
+  - Whiteboard/Converter (2.16.7):
     - Whiteboard/Object
-  - Whiteboard/Model (2.16.4):
+  - Whiteboard/Model (2.16.7):
     - YYModel (~> 1.0.4)
-  - Whiteboard/NativeReplayer (2.16.4):
+  - Whiteboard/NativeReplayer (2.16.7):
     - Whiteboard/Replayer
-  - Whiteboard/Object (2.16.4):
+  - Whiteboard/Object (2.16.7):
     - Whiteboard/Model
-  - Whiteboard/Replayer (2.16.4):
+  - Whiteboard/Replayer (2.16.7):
     - Whiteboard/Base
-  - Whiteboard/Room (2.16.4):
+  - Whiteboard/Room (2.16.7):
     - Whiteboard/Base
   - YYModel (1.0.4)
 
@@ -41,13 +41,13 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Fastboard:
-    :commit: a6181af5884fcf8679de1433cec52eb40ed8ca0b
+    :commit: 387e48b1c4816e9be16d914d6ba2a4e52266fd6c
     :git: https://www.github.com/netless-io/fastboard-ios
 
 SPEC CHECKSUMS:
   dsBridge: 48b62ee8a411ad601a88d6f6c8cf6cb634b206b7
-  Fastboard: accc27618f62bd3ec6b0c78557fde1881b6c8994
-  Whiteboard: 4171412993d6c8cef3fd66377654e9ff960e0388
+  Fastboard: 4e410b21223c6bedf5dab3b8639c366a9577dd29
+  Whiteboard: 2856a9441ae192ba8091167d4a219916e246588c
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
 PODFILE CHECKSUM: 0d556ca4d866782a0424e29f43a3d6c0a500aad2

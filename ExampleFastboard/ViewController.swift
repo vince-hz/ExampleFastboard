@@ -11,20 +11,20 @@ import Whiteboard
 
 class ViewController: UIViewController {
 
-    var fastboard: Fastboard!
+    var fastRoom: FastRoom!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let config = FastConfiguration(appIdentifier: "*",
-                                       roomUUID: "*",
-                                       roomToken: "*",
-                                       region: .CN,
-                                       userUID: "example-uid")
-        let fastboard = Fastboard(configuration: config)
-        view.addSubview(fastboard.view)
-        fastboard.joinRoom()
-        self.fastboard = fastboard
+        let config = FastRoomConfiguration(appIdentifier: "*",
+                                           roomUUID: "*",
+                                           roomToken: "*",
+                                           region: .CN,
+                                           userUID: "example-uid")
+        let fastRoom = Fastboard.createFastRoom(withFastRoomConfig: config)
+        view.addSubview(fastRoom.view)
+        fastRoom.joinRoom()
+        self.fastRoom = fastRoom
         
         let pptButton = UIButton(type: .system)
         pptButton.setTitle("ppt", for: .normal)
@@ -64,7 +64,7 @@ class ViewController: UIViewController {
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        fastboard.view.frame = view.bounds
+        fastRoom.view.frame = view.bounds
     }
     
     @objc func insertPpt() {
@@ -73,7 +73,7 @@ class ViewController: UIViewController {
                                        region: .CN,
                                        taskType: .dynamic) { [weak self] info, error in
             guard let pages = info?.progress?.convertedFileList else { return }
-            self?.fastboard.insertPptx(pages, title: "Get Started with Flat.pptx", completionHandler: nil)
+            self?.fastRoom.insertPptx(pages, title: "Get Started with Flat.pptx", completionHandler: nil)
         }
     }
     
@@ -83,7 +83,7 @@ class ViewController: UIViewController {
                                        region: .CN,
                                        taskType: .static) { [weak self] info, error in
             guard let pages = info?.progress?.convertedFileList else { return }
-            self?.fastboard.insertPptx(pages, title: "SDL2-API手册-1.doc", completionHandler: nil)
+            self?.fastRoom.insertPptx(pages, title: "SDL2-API手册-1.doc", completionHandler: nil)
         }
     }
     
@@ -93,18 +93,18 @@ class ViewController: UIViewController {
                                        region: .CN,
                                        taskType: .static) { [weak self] info, error in
             guard let pages = info?.progress?.convertedFileList else { return }
-            self?.fastboard.insertPptx(pages, title: "aac-iso-13818-7.pdf", completionHandler: nil)
+            self?.fastRoom.insertPptx(pages, title: "aac-iso-13818-7.pdf", completionHandler: nil)
         }
     }
     
     @objc func insertMP4() {
-        fastboard.insertMedia(URL(string: "https://flat-storage.oss-accelerate.aliyuncs.com/cloud-storage/2022-02/24/0638c040-f0d8-4828-9c51-eca794af13fc/0638c040-f0d8-4828-9c51-eca794af13fc.mp4")!,
+        fastRoom.insertMedia(URL(string: "https://flat-storage.oss-accelerate.aliyuncs.com/cloud-storage/2022-02/24/0638c040-f0d8-4828-9c51-eca794af13fc/0638c040-f0d8-4828-9c51-eca794af13fc.mp4")!,
                               title: "IMG_0005.mov.mp4",
                               completionHandler: nil)
     }
     
     @objc func insertMP3() {
-        fastboard.insertMedia(URL(string: "https://flat-storage.oss-accelerate.aliyuncs.com/cloud-storage/2022-02/24/5a642aa3-1d43-4c90-878a-e476bbc56c2e/5a642aa3-1d43-4c90-878a-e476bbc56c2e.mp3")!,
+        fastRoom.insertMedia(URL(string: "https://flat-storage.oss-accelerate.aliyuncs.com/cloud-storage/2022-02/24/5a642aa3-1d43-4c90-878a-e476bbc56c2e/5a642aa3-1d43-4c90-878a-e476bbc56c2e.mp3")!,
                               title: "AUDIO_2819-1.mp3",
                               completionHandler: nil)
     }
